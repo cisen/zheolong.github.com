@@ -7,6 +7,9 @@ tags: [Sublime,HTMLPrettify,HTML,CSS,format]
 ---
 {% include JB/setup %}
 
+* toc
+{:toc}
+
 ## Install HTMLPrettify ##
 
 建议先启用Package Control，作用是安装插件时很方便，启用方法：菜单栏 – View – Show Console，贴入以下代码并回车，然后重启Sublime。如果你所在的网络无法启用，则无法使用，手动搜索下载。

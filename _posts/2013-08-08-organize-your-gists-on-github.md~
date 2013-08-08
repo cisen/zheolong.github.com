@@ -1,0 +1,8 @@
+---
+layout: post
+title: "organize your gists on github"
+description: ""
+category: 
+tags: []
+---
+{% include JB/setup %}
