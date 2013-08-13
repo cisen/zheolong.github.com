@@ -2,7 +2,7 @@
 layout: post
 title: "how to include images and resources in jekyll"
 description: ""
-category: jekyll
+category: Jekyll
 tags: []
 ---
 {% include JB/setup %}

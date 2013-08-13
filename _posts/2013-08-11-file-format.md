@@ -2,7 +2,7 @@
 layout: post
 title: "file format"
 description: ""
-category: LaTex 
+category: Latex 
 tags: []
 ---
 {% include JB/setup %}
