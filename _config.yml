@@ -4,6 +4,7 @@ permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
+#代码高亮pygments
 pygments: true
 
 # Themes are encouraged to use these universal variables 
@@ -26,6 +27,7 @@ author :
   github : zheolong 
   twitter : username
   feedburner : feedname
+  speakerdeck : zheolong
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -148,5 +150,3 @@ kramdown:
   use_coderay: false
   parse_block_html: true
 
-#代码高亮pygments
-pygments: true

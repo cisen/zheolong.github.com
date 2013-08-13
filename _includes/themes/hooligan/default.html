@@ -64,6 +64,13 @@
                   </a>
                 </li>
               {% endif %}
+              {% if site.author.speakerdeck %}
+                <li>
+                  <a href="https://speakerdeck.com/{{ site.author.speakerdeck }}" class="zocial speakerdeck icon" target="_blank">
+                    <span class="hidden-desktop">Speakerdeck </span>
+                  </a>
+                </li>
+              {% endif %}
               {% if site.author.googleplus %}
                 <li>
                   <a href="https://plus.google.com/{{ site.author.googleplus }}" class="zocial googleplus icon" target="_blank">
