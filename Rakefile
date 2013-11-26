@@ -68,6 +68,17 @@ task :post do
     post.puts "tags: []"
     post.puts "---"
     post.puts "{% include JB/setup %}"
+	post.puts "\n"
+	post.puts "<!-- 目录 -->"
+	post.puts "* toc"
+	post.puts "{:toc}"
+	post.puts "\n"
+	post.puts "<!-- 正文 -->"
+	post.puts "\n"
+	post.puts "<!-- 代码块(注意修改语言) -->"
+	post.puts "{% highlight c %}"
+	post.puts "c code"
+	post.puts "{% endhighlight %}"
   end
 end # task :post
 
