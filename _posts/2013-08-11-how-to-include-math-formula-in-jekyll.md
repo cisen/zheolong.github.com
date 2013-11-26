@@ -2,7 +2,7 @@
 layout: post
 title: "how to include math formula in jekyll"
 description: ""
-category: Rekyll
+category: Jekyll
 tags: []
 ---
 {% include JB/setup %}
