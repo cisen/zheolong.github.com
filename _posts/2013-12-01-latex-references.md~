@@ -1,0 +1,19 @@
+---
+layout: post
+title: "latex references"
+description: ""
+category: 
+tags: []
+---
+{% include JB/setup %}
+
+<!-- 目录 -->
+* toc
+{:toc}
+
+<!-- 正文 -->
+
+<!-- 代码块(注意修改语言) -->
+{% highlight c %}
+c code
+{% endhighlight %}

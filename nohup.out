@@ -1,0 +1,1080 @@
+Configuration file: /root/software/zheolong.github.com/_config.yml
+[33m       Deprecation: Auto-regeneration can no longer be set from your configuration file(s). Use the --watch/-w command-line option instead.[0m
+            Source: /root/software/zheolong.github.com
+       Destination: /root/software/zheolong.github.com/_site
+      Generating... done.
+ Auto-regeneration: enabled
+[2013-11-27 14:20:46] INFO  WEBrick 1.3.1
+[2013-11-27 14:20:46] INFO  ruby 2.1.0 (2013-08-06) [i686-linux]
+[2013-11-27 14:20:46] INFO  WEBrick::HTTPServer#start: pid=11697 port=4000
+      Regenerating: 1 files at 2013-11-27 14:20:47 ...done.
+      Regenerating: 1 files at 2013-11-27 14:20:48 ...done.
+      Regenerating: 1 files at 2013-11-27 14:20:49 ...done.
+      Regenerating: 1 files at 2013-11-27 14:20:50 ...done.
+      Regenerating: 1 files at 2013-11-27 14:20:51 ...done.
+      Regenerating: 1 files at 2013-11-27 14:20:52 ...done.
+      Regenerating: 1 files at 2013-11-27 14:20:53 ...done.
+      Regenerating: 1 files at 2013-11-27 14:20:54 ...done.
+      Regenerating: 1 files at 2013-11-27 14:20:55 ...done.
+      Regenerating: 1 files at 2013-11-27 14:20:56 ...done.
+      Regenerating: 1 files at 2013-11-27 14:20:57 ...done.
+      Regenerating: 1 files at 2013-11-27 14:20:58 localhost.localdomain - - [27/Nov/2013:14:20:58 CST] "GET /jekyll/2013/08/08/pygments-with-line-number/ HTTP/1.1" 200 10236
+http://localhost:4000/categories.html -> /jekyll/2013/08/08/pygments-with-line-number/
+localhost.localdomain - - [27/Nov/2013:14:20:58 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/darkstrap.css
+localhost.localdomain - - [27/Nov/2013:14:20:58 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+localhost.localdomain - - [27/Nov/2013:14:20:58 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+localhost.localdomain - - [27/Nov/2013:14:20:58 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+localhost.localdomain - - [27/Nov/2013:14:20:58 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:14:20:58 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/pygments.css
+localhost.localdomain - - [27/Nov/2013:14:20:58 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+localhost.localdomain - - [27/Nov/2013:14:20:58 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 200 31838
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+...done.
+      Regenerating: 1 files at 2013-11-27 14:20:59 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:00 localhost.localdomain - - [27/Nov/2013:14:21:00 CST] "GET /jekyll/2013/08/08/pygments-with-line-number/ HTTP/1.1" 200 10236
+http://localhost:4000/categories.html -> /jekyll/2013/08/08/pygments-with-line-number/
+localhost.localdomain - - [27/Nov/2013:14:21:00 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/darkstrap.css
+localhost.localdomain - - [27/Nov/2013:14:21:00 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+localhost.localdomain - - [27/Nov/2013:14:21:00 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:14:21:00 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/pygments.css
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+localhost.localdomain - - [27/Nov/2013:14:21:00 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+localhost.localdomain - - [27/Nov/2013:14:21:00 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+localhost.localdomain - - [27/Nov/2013:14:21:00 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+localhost.localdomain - - [27/Nov/2013:14:21:00 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 200 31838
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+...done.
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /jekyll/2013/08/08/pygments-with-line-number/ HTTP/1.1" 200 10236
+http://localhost:4000/categories.html -> /jekyll/2013/08/08/pygments-with-line-number/
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+      Regenerating: 1 files at 2013-11-27 14:21:01 localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/darkstrap.css
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/pygments.css
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /jekyll/2013/08/08/pygments-with-line-number/ HTTP/1.1" 304 0
+http://localhost:4000/categories.html -> /jekyll/2013/08/08/pygments-with-line-number/
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 304 0
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/darkstrap.css
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/pygments.css
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 304 0
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+localhost.localdomain - - [27/Nov/2013:14:21:01 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 200 31838
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+...done.
+      Regenerating: 1 files at 2013-11-27 14:21:02 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:03 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:04 [31m  Liquid Exception: EPIPE in 2013-08-08-pygments-with-line-number.md[0m
+      Regenerating: 1 files at 2013-11-27 14:21:05 localhost.localdomain - - [27/Nov/2013:14:21:05 CST] "GET /jekyll/2013/08/08/pygments-with-line-number/ HTTP/1.1" 200 10236
+http://localhost:4000/categories.html -> /jekyll/2013/08/08/pygments-with-line-number/
+localhost.localdomain - - [27/Nov/2013:14:21:05 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+localhost.localdomain - - [27/Nov/2013:14:21:05 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/pygments.css
+localhost.localdomain - - [27/Nov/2013:14:21:05 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+localhost.localdomain - - [27/Nov/2013:14:21:05 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+localhost.localdomain - - [27/Nov/2013:14:21:05 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/darkstrap.css
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:14:21:05 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+localhost.localdomain - - [27/Nov/2013:14:21:05 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+localhost.localdomain - - [27/Nov/2013:14:21:05 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 200 31838
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+...done.
+      Regenerating: 1 files at 2013-11-27 14:21:06 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:07 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:08 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:09 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:10 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:11 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:12 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:13 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:14 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:15 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:16 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:17 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:18 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:19 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:20 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:21 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:22 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:23 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:24 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:25 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:26 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:27 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:28 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:29 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:30 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:31 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:32 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:33 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:34 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:35 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:36 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:37 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:38 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:39 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:40 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:41 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:42 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:43 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:44 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:45 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:46 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:47 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:48 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:49 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:50 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:51 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:52 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:53 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:54 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:55 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:56 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:57 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:58 ...done.
+      Regenerating: 1 files at 2013-11-27 14:21:59 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:00 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:01 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:02 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:03 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:04 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:05 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:06 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:07 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:08 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:09 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:10 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:11 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:12 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:13 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:14 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:15 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:16 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:17 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:18 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:19 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:20 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:21 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:22 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:23 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:24 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:25 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:26 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:27 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:28 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:29 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:30 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:31 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:32 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:33 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:34 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:35 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:36 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:37 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:38 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:39 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:40 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:41 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:42 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:43 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:44 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:45 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:46 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:47 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:48 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:49 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:50 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:51 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:52 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:53 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:54 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:55 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:56 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:57 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:58 ...done.
+      Regenerating: 1 files at 2013-11-27 14:22:59 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:00 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:01 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:02 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:03 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:04 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:05 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:06 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:07 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:08 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:09 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:10 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:11 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:12 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:13 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:14 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:15 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:16 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:17 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:18 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:19 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:20 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:21 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:22 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:23 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:24 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:25 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:26 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:27 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:28 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:29 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:30 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:31 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:32 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:33 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:34 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:35 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:36 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:37 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:38 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:39 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:40 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:41 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:42 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:43 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:44 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:45 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:46 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:47 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:48 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:49 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:50 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:51 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:52 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:53 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:54 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:55 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:56 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:57 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:58 ...done.
+      Regenerating: 1 files at 2013-11-27 14:23:59 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:00 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:01 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:02 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:03 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:04 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:05 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:06 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:07 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:08 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:09 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:10 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:11 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:12 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:13 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:14 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:15 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:16 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:17 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:18 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:19 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:20 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:21 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:22 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:23 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:24 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:25 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:26 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:27 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:28 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:29 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:30 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:31 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:32 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:33 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:34 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:35 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:36 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:37 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:38 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:39 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:40 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:41 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:42 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:43 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:44 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:45 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:46 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:47 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:48 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:49 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:50 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:51 localhost.localdomain - - [27/Nov/2013:14:24:51 CST] "GET /jekyll/2013/08/08/pygments-with-line-number/ HTTP/1.1" 200 10236
+http://localhost:4000/categories.html -> /jekyll/2013/08/08/pygments-with-line-number/
+localhost.localdomain - - [27/Nov/2013:14:24:51 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+localhost.localdomain - - [27/Nov/2013:14:24:51 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+localhost.localdomain - - [27/Nov/2013:14:24:51 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+localhost.localdomain - - [27/Nov/2013:14:24:51 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/darkstrap.css
+localhost.localdomain - - [27/Nov/2013:14:24:51 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/pygments.css
+localhost.localdomain - - [27/Nov/2013:14:24:51 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:14:24:51 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+...done.
+      Regenerating: 1 files at 2013-11-27 14:24:52 localhost.localdomain - - [27/Nov/2013:14:24:52 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 200 31838
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+...done.
+      Regenerating: 1 files at 2013-11-27 14:24:53 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:54 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:55 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:56 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:57 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:58 ...done.
+      Regenerating: 1 files at 2013-11-27 14:24:59 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:00 localhost.localdomain - - [27/Nov/2013:14:25:00 CST] "GET /categories.html HTTP/1.1" 200 8391
+http://localhost:4000/jekyll/2013/08/08/pygments-with-line-number/ -> /categories.html
+localhost.localdomain - - [27/Nov/2013:14:25:00 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+localhost.localdomain - - [27/Nov/2013:14:25:00 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+localhost.localdomain - - [27/Nov/2013:14:25:00 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+localhost.localdomain - - [27/Nov/2013:14:25:00 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/darkstrap.css
+localhost.localdomain - - [27/Nov/2013:14:25:00 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:14:25:00 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/pygments.css
+localhost.localdomain - - [27/Nov/2013:14:25:00 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+[2013-11-27 14:25:00] ERROR `/assets/themes/hooligan/images/bgs/body.png' not found.
+localhost.localdomain - - [27/Nov/2013:14:25:00 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 404 312
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+...done.
+      Regenerating: 1 files at 2013-11-27 14:25:01 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:02 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:03 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:04 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:05 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:06 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:07 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:08 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:09 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:10 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:11 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:12 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:13 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:14 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:15 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:16 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:17 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:18 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:19 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:20 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:21 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:22 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:23 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:24 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:25 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:26 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:27 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:28 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:29 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:30 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:31 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:32 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:33 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:34 ...done.
+      Regenerating: 1 files at 2013-11-27 14:25:37 [31m  Liquid Exception: EPIPE in 2013-11-26-shell-programming-grammar.md[0m
+      Regenerating: 1 files at 2013-11-27 14:27:40 Configuration file: /root/software/zheolong.github.com/_config.yml
+[33m       Deprecation: Auto-regeneration can no longer be set from your configuration file(s). Use the --watch/-w command-line option instead.[0m
+            Source: /root/software/zheolong.github.com
+       Destination: /root/software/zheolong.github.com/_site
+      Generating... [31m  Liquid Exception: EPIPE in 2013-08-11-how-to-include-math-formula-in-jekyll.md[0m
+error: EPIPE. Use --trace to view backtrace
+Configuration file: /root/software/zheolong.github.com/_config.yml
+[33m       Deprecation: Auto-regeneration can no longer be set from your configuration file(s). Use the --watch/-w command-line option instead.[0m
+            Source: /root/software/zheolong.github.com
+       Destination: /root/software/zheolong.github.com/_site
+      Generating... done.
+ Auto-regeneration: enabled
+[2013-11-27 15:10:25] INFO  WEBrick 1.3.1
+[2013-11-27 15:10:25] INFO  ruby 2.1.0 (2013-08-06) [i686-linux]
+[2013-11-27 15:10:25] INFO  WEBrick::HTTPServer#start: pid=4072 port=4000
+      Regenerating: 1 files at 2013-11-27 15:10:26 [31m  Liquid Exception: EPIPE in 2013-08-08-pygments-with-line-number.md[0m
+      Regenerating: 1 files at 2013-11-27 15:10:27 localhost.localdomain - - [27/Nov/2013:15:10:27 CST] "GET / HTTP/1.1" 200 8439
+- -> /
+localhost.localdomain - - [27/Nov/2013:15:10:27 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+http://localhost:4000/ -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+localhost.localdomain - - [27/Nov/2013:15:10:27 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+http://localhost:4000/ -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+localhost.localdomain - - [27/Nov/2013:15:10:27 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+http://localhost:4000/ -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:15:10:27 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+localhost.localdomain - - [27/Nov/2013:15:10:27 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+http://localhost:4000/ -> /assets/themes/hooligan/css/pygments.css
+http://localhost:4000/ -> /assets/themes/hooligan/css/darkstrap.css
+localhost.localdomain - - [27/Nov/2013:15:10:27 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+http://localhost:4000/ -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+localhost.localdomain - - [27/Nov/2013:15:10:27 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/ -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+localhost.localdomain - - [27/Nov/2013:15:10:27 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 200 31838
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+localhost.localdomain - - [27/Nov/2013:15:10:27 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial-regular-webfont.woff HTTP/1.1" 200 31320
+http://localhost:4000/assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css -> /assets/themes/hooligan/css-social-buttons/css/zocial-regular-webfont.woff
+...done.
+      Regenerating: 1 files at 2013-11-27 15:10:28 [2013-11-27 15:10:28] ERROR `/favicon.ico' not found.
+localhost.localdomain - - [27/Nov/2013:15:10:28 CST] "GET /favicon.ico HTTP/1.1" 404 281
+- -> /favicon.ico
+[2013-11-27 15:10:28] ERROR `/favicon.ico' not found.
+localhost.localdomain - - [27/Nov/2013:15:10:28 CST] "GET /favicon.ico HTTP/1.1" 404 281
+- -> /favicon.ico
+...done.
+      Regenerating: 1 files at 2013-11-27 15:10:29 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:30 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:31 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:32 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:33 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:34 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:35 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:36 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:37 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:38 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:39 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:40 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:41 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:42 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:43 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:44 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:45 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:46 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:47 localhost.localdomain - - [27/Nov/2013:15:10:47 CST] "GET /categories.html HTTP/1.1" 200 8391
+http://localhost:4000/ -> /categories.html
+localhost.localdomain - - [27/Nov/2013:15:10:47 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+localhost.localdomain - - [27/Nov/2013:15:10:47 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+localhost.localdomain - - [27/Nov/2013:15:10:47 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+localhost.localdomain - - [27/Nov/2013:15:10:47 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/darkstrap.css
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+localhost.localdomain - - [27/Nov/2013:15:10:47 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/pygments.css
+localhost.localdomain - - [27/Nov/2013:15:10:47 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:15:10:47 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+localhost.localdomain - - [27/Nov/2013:15:10:47 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 200 31838
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+...done.
+      Regenerating: 1 files at 2013-11-27 15:10:48 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:49 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:50 localhost.localdomain - - [27/Nov/2013:15:10:50 CST] "GET /categories.html HTTP/1.1" 200 8391
+http://localhost:4000/ -> /categories.html
+localhost.localdomain - - [27/Nov/2013:15:10:50 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+localhost.localdomain - - [27/Nov/2013:15:10:50 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+localhost.localdomain - - [27/Nov/2013:15:10:50 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+localhost.localdomain - - [27/Nov/2013:15:10:50 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/darkstrap.css
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:15:10:50 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+localhost.localdomain - - [27/Nov/2013:15:10:50 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/pygments.css
+[2013-11-27 15:10:50] ERROR `/assets/themes/hooligan/bootstrap/js/bootstrap.min.js' not found.
+localhost.localdomain - - [27/Nov/2013:15:10:50 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 404 322
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+...done.
+localhost.localdomain - - [27/Nov/2013:15:10:51 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 200 31838
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+localhost.localdomain - - [27/Nov/2013:15:10:51 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+      Regenerating: 1 files at 2013-11-27 15:10:51 ...done.
+localhost.localdomain - - [27/Nov/2013:15:10:52 CST] "GET /categories.html HTTP/1.1" 200 8391
+http://localhost:4000/ -> /categories.html
+localhost.localdomain - - [27/Nov/2013:15:10:52 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+localhost.localdomain - - [27/Nov/2013:15:10:52 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+localhost.localdomain - - [27/Nov/2013:15:10:52 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+      Regenerating: 1 files at 2013-11-27 15:10:52 http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+localhost.localdomain - - [27/Nov/2013:15:10:52 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+localhost.localdomain - - [27/Nov/2013:15:10:52 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+localhost.localdomain - - [27/Nov/2013:15:10:52 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/pygments.css
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/darkstrap.css
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:15:10:52 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+localhost.localdomain - - [27/Nov/2013:15:10:52 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 200 31838
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+...done.
+      Regenerating: 1 files at 2013-11-27 15:10:53 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:54 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:55 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:56 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:57 ...done.
+      Regenerating: 1 files at 2013-11-27 15:10:58 ...done.
+      Regenerating: 2 files at 2013-11-27 15:10:59 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:00 localhost.localdomain - - [27/Nov/2013:15:11:00 CST] "GET /categories.html HTTP/1.1" 200 8504
+http://localhost:4000/ -> /categories.html
+localhost.localdomain - - [27/Nov/2013:15:11:00 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+localhost.localdomain - - [27/Nov/2013:15:11:00 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+localhost.localdomain - - [27/Nov/2013:15:11:00 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+localhost.localdomain - - [27/Nov/2013:15:11:00 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+localhost.localdomain - - [27/Nov/2013:15:11:00 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/style.css?body=1
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/pygments.css
+localhost.localdomain - - [27/Nov/2013:15:11:00 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+http://localhost:4000/categories.html -> /assets/themes/hooligan/css/darkstrap.css
+localhost.localdomain - - [27/Nov/2013:15:11:00 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/categories.html -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+localhost.localdomain - - [27/Nov/2013:15:11:00 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 200 31838
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+...done.
+      Regenerating: 1 files at 2013-11-27 15:11:01 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:02 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:03 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:04 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:05 localhost.localdomain - - [27/Nov/2013:15:11:05 CST] "GET /shell/2013/11/27/shell-tips HTTP/1.1" 301 88
+http://localhost:4000/categories.html -> /shell/2013/11/27/shell-tips
+localhost.localdomain - - [27/Nov/2013:15:11:05 CST] "GET /shell/2013/11/27/shell-tips/ HTTP/1.1" 200 7015
+http://localhost:4000/categories.html -> /shell/2013/11/27/shell-tips/
+localhost.localdomain - - [27/Nov/2013:15:11:05 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+localhost.localdomain - - [27/Nov/2013:15:11:05 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+localhost.localdomain - - [27/Nov/2013:15:11:05 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/css/pygments.css
+localhost.localdomain - - [27/Nov/2013:15:11:05 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+localhost.localdomain - - [27/Nov/2013:15:11:05 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/css/darkstrap.css
+localhost.localdomain - - [27/Nov/2013:15:11:05 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:15:11:05 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+localhost.localdomain - - [27/Nov/2013:15:11:05 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 200 31838
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+...done.
+      Regenerating: 1 files at 2013-11-27 15:11:06 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:07 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:08 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:09 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:10 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:11 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:12 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:13 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:14 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:15 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:16 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:17 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:18 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:19 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:20 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:21 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:22 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:23 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:24 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:25 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:26 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:27 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:28 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:29 ...done.
+      Regenerating: 2 files at 2013-11-27 15:11:30 ...done.
+localhost.localdomain - - [27/Nov/2013:15:11:31 CST] "GET /shell/2013/11/27/shell-tips/ HTTP/1.1" 200 7041
+http://localhost:4000/categories.html -> /shell/2013/11/27/shell-tips/
+localhost.localdomain - - [27/Nov/2013:15:11:31 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 82972
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/bootstrap/css/bootstrap.min.css
+localhost.localdomain - - [27/Nov/2013:15:11:31 CST] "GET /assets/themes/hooligan/css/style.css?body=1 HTTP/1.1" 200 9695
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/css/style.css?body=1
+localhost.localdomain - - [27/Nov/2013:15:11:31 CST] "GET /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css HTTP/1.1" 200 10629
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/bootstrap/css/bootstrap-responsive.min.css
+localhost.localdomain - - [27/Nov/2013:15:11:31 CST] "GET /assets/themes/hooligan/css/pygments.css HTTP/1.1" 200 3331
+localhost.localdomain - - [27/Nov/2013:15:11:31 CST] "GET /assets/themes/hooligan/css/darkstrap.css HTTP/1.1" 200 10254
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/css/darkstrap.css
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/css/pygments.css
+localhost.localdomain - - [27/Nov/2013:15:11:31 CST] "GET /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css HTTP/1.1" 200 5739
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/css-social-buttons/css/zocial.stripped.css
+localhost.localdomain - - [27/Nov/2013:15:11:31 CST] "GET /assets/themes/hooligan/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 22337
+http://localhost:4000/shell/2013/11/27/shell-tips/ -> /assets/themes/hooligan/bootstrap/js/bootstrap.min.js
+      Regenerating: 1 files at 2013-11-27 15:11:31 localhost.localdomain - - [27/Nov/2013:15:11:31 CST] "GET /assets/themes/hooligan/images/bgs/body.png HTTP/1.1" 200 31838
+http://localhost:4000/assets/themes/hooligan/css/style.css?body=1 -> /assets/themes/hooligan/images/bgs/body.png
+...done.
+      Regenerating: 1 files at 2013-11-27 15:11:32 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:33 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:34 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:35 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:36 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:37 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:38 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:39 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:40 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:41 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:42 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:43 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:44 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:45 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:46 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:47 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:48 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:49 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:50 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:51 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:52 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:53 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:54 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:55 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:56 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:57 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:58 ...done.
+      Regenerating: 1 files at 2013-11-27 15:11:59 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:00 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:01 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:02 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:03 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:04 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:05 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:06 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:07 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:08 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:09 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:10 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:11 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:12 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:13 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:14 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:15 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:16 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:17 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:18 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:19 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:20 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:21 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:22 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:23 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:24 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:25 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:26 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:27 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:28 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:29 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:30 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:31 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:32 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:33 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:34 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:35 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:36 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:37 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:38 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:39 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:40 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:41 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:42 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:43 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:44 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:45 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:46 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:47 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:48 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:49 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:50 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:51 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:52 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:53 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:54 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:55 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:56 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:57 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:58 ...done.
+      Regenerating: 1 files at 2013-11-27 15:12:59 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:00 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:01 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:02 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:03 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:04 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:05 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:06 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:07 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:08 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:09 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:10 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:11 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:12 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:13 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:14 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:15 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:16 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:17 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:18 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:19 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:20 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:21 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:22 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:23 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:24 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:25 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:26 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:27 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:28 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:29 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:30 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:31 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:32 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:33 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:34 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:35 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:36 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:37 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:38 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:39 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:40 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:41 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:42 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:43 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:44 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:45 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:46 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:47 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:48 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:49 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:50 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:51 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:52 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:53 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:54 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:55 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:56 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:57 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:58 ...done.
+      Regenerating: 1 files at 2013-11-27 15:13:59 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:00 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:01 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:02 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:03 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:04 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:05 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:06 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:07 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:08 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:09 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:10 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:11 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:12 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:13 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:14 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:15 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:16 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:17 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:18 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:19 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:20 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:21 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:22 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:23 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:24 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:25 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:26 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:27 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:28 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:29 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:30 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:31 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:32 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:33 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:34 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:35 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:36 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:37 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:38 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:39 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:40 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:41 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:42 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:43 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:44 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:45 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:46 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:47 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:48 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:49 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:50 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:51 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:52 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:53 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:54 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:55 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:56 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:57 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:58 ...done.
+      Regenerating: 1 files at 2013-11-27 15:14:59 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:00 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:01 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:02 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:03 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:04 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:05 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:06 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:07 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:08 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:09 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:10 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:11 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:12 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:13 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:14 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:15 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:16 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:17 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:18 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:19 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:20 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:21 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:22 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:23 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:24 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:25 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:26 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:27 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:28 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:29 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:30 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:31 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:32 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:33 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:34 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:35 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:36 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:37 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:38 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:39 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:40 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:41 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:42 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:43 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:44 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:45 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:46 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:47 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:48 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:49 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:50 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:51 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:52 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:53 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:54 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:55 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:56 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:57 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:58 ...done.
+      Regenerating: 1 files at 2013-11-27 15:15:59 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:00 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:01 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:02 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:03 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:04 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:05 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:06 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:07 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:08 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:09 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:10 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:11 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:12 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:13 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:14 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:15 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:16 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:17 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:18 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:19 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:20 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:21 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:22 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:23 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:24 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:25 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:26 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:27 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:28 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:29 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:30 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:31 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:32 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:33 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:34 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:35 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:36 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:37 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:38 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:39 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:40 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:41 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:42 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:43 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:44 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:45 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:46 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:47 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:48 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:49 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:50 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:51 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:52 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:53 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:54 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:55 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:56 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:57 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:58 ...done.
+      Regenerating: 1 files at 2013-11-27 15:16:59 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:00 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:01 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:02 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:03 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:04 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:05 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:06 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:07 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:08 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:09 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:10 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:11 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:12 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:13 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:14 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:15 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:16 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:17 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:18 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:19 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:20 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:21 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:22 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:23 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:24 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:25 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:26 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:27 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:28 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:29 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:30 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:31 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:32 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:33 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:34 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:35 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:36 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:37 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:38 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:39 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:40 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:41 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:42 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:43 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:44 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:45 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:46 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:47 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:48 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:49 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:50 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:51 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:52 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:53 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:54 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:55 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:56 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:57 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:58 ...done.
+      Regenerating: 1 files at 2013-11-27 15:17:59 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:00 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:01 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:02 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:03 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:04 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:05 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:06 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:07 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:08 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:09 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:11 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:13 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:16 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:18 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:19 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:25 ...done.
+      Regenerating: 1 files at 2013-11-27 15:18:54 ...done.
+      Regenerating: 1 files at 2013-11-27 15:19:12 ...done.
+      Regenerating: 1 files at 2013-11-27 15:19:26 ...done.
+      Regenerating: 1 files at 2013-11-27 15:23:25 Configuration file: /root/software/zheolong.github.com/_config.yml
+[33m       Deprecation: Auto-regeneration can no longer be set from your configuration file(s). Use the --watch/-w command-line option instead.[0m
+            Source: /root/software/zheolong.github.com
+       Destination: /root/software/zheolong.github.com/_site
+      Generating... [31m  Liquid Exception: Traceback (most recent call last): File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/lib/pygments/mentos.py", line 303, in start res = self.get_data(method, lexer, args, kwargs, text) File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/lib/pygments/mentos.py", line 171, in get_data res = self.highlight_text(text, lexer, formatter_name, args, _convert_keys(opts)) File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/lib/pygments/mentos.py", line 122, in highlight_text lexer = self.return_lexer(lexer, args, kwargs, code) File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/lib/pygments/mentos.py", line 79, in return_lexer return lexers.get_lexer_by_name(lexer, **inputs) File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/vendor/pygments-main/pygments/lexers/__init__.py", line 74, in get_lexer_by_name _load_lexers(module_name) File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/vendor/pygments-main/pygments/lexers/__init__.py", line 32, in _load_lexers mod = __import__(module_name, None, None, ['__all__']) File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/vendor/pygments-main/pygments/lexers/text.py", line 20, in <module> from pygments.lexers.other import BashLexer File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/vendor/pygments-main/pygments/lexers/other.py", line 19, in <module> from pygments.lexers.web import HtmlLexer File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/vendor/pygments-main/pygments/lexers/web.py", line 22, in <module> from pygments.lexers.compiled import ScalaLexer File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/vendor/pygments-main/pygments/lexers/compiled.py", line 10, in <module> """ File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/lib/pygments/mentos.py", line 50, in _signal_handler sys.exit(0) SystemExit: 0 in 2013-08-11-how-to-include-math-formula-in-jekyll.md[0m
+error: Traceback (most recent call last):
+  File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/lib/pygments/mentos.py", line 303, in start
+    res = self.get_data(method, lexer, args, kwargs, text)
+  File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/lib/pygments/mentos.py", line 171, in get_data
+    res = self.highlight_text(text, lexer, formatter_name, args, _convert_keys(opts))
+  File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/lib/pygments/mentos.py", line 122, in highlight_text
+    lexer = self.return_lexer(lexer, args, kwargs, code)
+  File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/lib/pygments/mentos.py", line 79, in return_lexer
+    return lexers.get_lexer_by_name(lexer, **inputs)
+  File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/vendor/pygments-main/pygments/lexers/__init__.py", line 74, in get_lexer_by_name
+    _load_lexers(module_name)
+  File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/vendor/pygments-main/pygments/lexers/__init__.py", line 32, in _load_lexers
+    mod = __import__(module_name, None, None, ['__all__'])
+  File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/vendor/pygments-main/pygments/lexers/text.py", line 20, in <module>
+    from pygments.lexers.other import BashLexer
+  File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/vendor/pygments-main/pygments/lexers/other.py", line 19, in <module>
+    from pygments.lexers.web import HtmlLexer
+  File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/vendor/pygments-main/pygments/lexers/web.py", line 22, in <module>
+    from pygments.lexers.compiled import ScalaLexer
+  File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/vendor/pygments-main/pygments/lexers/compiled.py", line 10, in <module>
+    """
+  File "/usr/lib/ruby/gems/2.1.0/gems/pygments.rb-0.5.2/lib/pygments/mentos.py", line 50, in _signal_handler
+    sys.exit(0)
+SystemExit: 0
+. Use --trace to view backtrace

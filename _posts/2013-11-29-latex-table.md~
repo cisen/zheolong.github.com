@@ -1,0 +1,51 @@
+---
+layout: post
+title: "latex table"
+description: ""
+category: LaTex
+tags: []
+---
+{% include JB/setup %}
+
+<!-- 目录 -->
+* toc
+{:toc}
+
+<!-- 正文 -->
+
+## 参考资料 ##
+
+[LaTeX/Tables](http://en.wikibooks.org/wiki/LaTeX/Tables)
+
+## 表格第一行居中 ##
+表格模式设置左对齐然后第一行用`\multicolumn{1}{|c|}{文本内容}`就可以了
+
+{% highlight latex %}
+\begin{table}[h!]
+  \centering
+  \caption{实验所用性能指标}
+  \label{tab:performance-indicators}
+  \begin{tabular}[c]{|l|l|}
+  \hline
+  \multicolumn{1}{|c|}{评价指标} & \multicolumn{1}{|c|}{含义}\\
+  \hline
+  队列长度 & 配置实验算法的队列瞬时数据包个数 \\
+  \hline
+  丢包率 & 所丢失数据包数量占所发送数据包的比率\\
+  \hline
+  有效吞吐量 & 网络单位时间内成功地传送数据的数量\\
+  \hline
+  平均时延 & 所测量数据包从网络的一端传送到另一个端所需时间的平均值\\
+  \hline
+  时延抖动 & 不同数据包之间的时延差异\\
+  \hline
+\end{tabular}
+\end{
+{% endhighlight %}
+
+
+
+<!-- 代码块(注意修改语言) -->
+{% highlight c %}
+c code
+{% endhighlight %}
