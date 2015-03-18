@@ -1,8 +1,0 @@
----
-layout: post
-title: "how to include math formula in jekyll"
-description: ""
-category: 
-tags: []
----
-{% include JB/setup %}

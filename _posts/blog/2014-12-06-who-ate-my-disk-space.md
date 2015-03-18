@@ -2,26 +2,28 @@
 layout: post
 title: "Who Ate My Disk Space"
 modified:
-categories: blog/system
+categories: blog
 excerpt:
 tags: [Kafka, XFS, Disk Usage, Apparent Size, Df, Du, Preallocation]
-author: zheolong
 comments: true
 share: true
+image:
+  feature:
 date: 2014-12-06T15:12:25+08:00
 ---
+
 ## High Disk Usage 
 
-Apache Kafka is publish-subscribe messaging rethought as a distributed commit log. Messages are persisted on disk. We built serveral kafka clusters (v0.7.2), but during the operation encountered a thorny problem: disk usage of some brokers is high, approaching **87%**, but after restarting the kafka process, disk usage dropped to **60%**. 
+Apache Kafka is publish-subscribe messaging rethought as a distributed commit log. Messages are persisted on disk. We built serveral kafka clusters (v0.7.2), but during the operation encountered a thorny problem: disk usage of some brokers is high, approaching **87%**, but after restarting the kafka process, disk usage dropped to **63%**. 
 
 
-Before restarted kafka, `df -h` shows
+Before restarting kafka, `df -h` shows
 
     Filesystem            Size  Used Avail Use% Mounted on
 
     /dev/mapper/VolGroup00-LogVol04   1.6T  1.3T  206G  87% /data
 
-After restarted kafka, `df -h` shows
+After restarting kafka, `df -h` shows
 
 
     Filesystem            Size  Used Avail Use% Mounted on
@@ -107,9 +109,8 @@ Speculative preallocation **can not be disabled** but XFS can be tuned to a **fi
 2. [Why are my XFS filesystems suddenly consuming more space and full of sparse files?](http://serverfault.com/questions/406069/why-are-my-xfs-filesystems-suddenly-consuming-more-space-and-full-of-sparse-file)
 3. [why is the output of `du` often so different from `du -b`](http://stackoverflow.com/questions/5694741/why-is-the-output-of-du-often-so-different-from-du-b)
 
-
-
-
+[jekyll-gh]: https://github.com/jekyll/jekyll
+[jekyll]:    http://jekyllrb.com
 
 
 
