@@ -335,7 +335,7 @@ zookeeper.connect
 Topic级的配置以及默认值会在[后面](https://kafka.apache.org/documentation.html#topic-config)详细说明。
 
 | 属性        | 默认值           | 说明  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:|:-----|
 | broker.id      |              | broker在集群内的唯一id，非负整数 |
 | log.dirs      | /tmp/kafka-logs      |   Kafa数据存储目录，逗号分隔；创建新的partition时，会选择partition数量最少的目录 |
 | port | 6667      |    服务端接受客户端连接的端口 |
