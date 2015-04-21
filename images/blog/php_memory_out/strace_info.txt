@@ -1,0 +1,529 @@
+sendto(7, "\0\0\0$", 4, MSG_DONTWAIT, NULL, 0) = 4
+sendto(7, "\0\1\0\20barcode_realtime\0\0\0\5\0\0\0\0\0\0\0\0"..., 36, MSG_DONTWAIT, NULL, 0) = 36
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\1\340\0\2\0\0", 8192, MSG_DONTWAIT, NULL, NULL) = 6
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\0\0\1\270\1\0\321\252\353{{\"origin\": \"\\u664b\\u6c"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "p://src.kuaipai.cn/image/201103/"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "c\": \"200\\u62bd(208MM*210MM)*2\\u5"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "5\", \"country\": \"\\u4e2d\\u56fd\", \""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\", \"price\": \"6.5\", \"source\": \"ku"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u5370200\\u62bd\\u9762\\u5dfe\\u7eb"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "52\\u5b89\\u96c6\\u56e2\\u6709\\u9650"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "89\\u5de5\\u4e1a\\u57ce\", \"name\": \""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "6316\", \"factory\": \"\\u9f99\\u53e3\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\31\264\215{\"origin\": \"\\u5c71\\u4e1c\\u770"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "rce\": \"kuaipai\", \"barcode\": \"692"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "u7f06\\u6709\\u9650\\u516c\\u53f8\"}\0"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "a\\u9547\\u653f\\u5e9c\\u9a7b\\u5730\""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "9\\u53e3\\u9f99\\u76db\\u7535\\u7ebf\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "e1c\\u7701\\u9f99\\u53e3\\u5e02\\u7f8"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "e\": \"6924732056316\", \"factory\": "..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "u53f8\"}\0\0\0\352\1\0\362\31\264\215{\"origin\": \"\\u5"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "b\\u5730\", \"source\": \"kuaipai\", \""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "5\\u7ebf\\u7535\\u7f06\\u6709\\u9650\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "e02\\u7f8a\\u5c9a\\u9547\\u653f\\u5e9"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ctory\": \"\\u9f99\\u53e3\\u9f99\\u76d"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "n\": \"\\u5c71\\u4e1c\\u7701\\u9f99\\u5"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ipai\", \"barcode\": \"6924732056316"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "9\\u9650\\u516c\\u53f8\"}\0\0\0\352\1\0\362\31\264\215{"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "53f\\u5e9c\\u9a7b\\u5730\", \"source\""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "f8\", \"price\": \"6.5\", \"source\": \""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "f8\\u5370200\\u62bd\\u9762\\u5dfe\\u7"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "6052\\u5b89\\u96c6\\u56e2\\u6709\\u96"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "5b89\\u5de5\\u4e1a\\u57ce\", \"name\":"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, " \"6903244984102\", \"factory\": \"\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u664b\\u6c5f\\u5e02\\u5b89\\u6d77\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ge/201103/05/_1299327309624.jpg\""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "10MM)*2\\u5c42/\\u888b\"}\0\0\1\270\1\0\321\252\353{"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, ": \"\\u5c71\\u4e1c\\u7701\\u9f99\\u53e"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ai\", \"barcode\": \"6924732056316\","..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "u9650\\u516c\\u53f8\"}\0\0\0\352\1\0\362\31\264\215{\"o"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "f\\u5e9c\\u9a7b\\u5730\", \"source\": "..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "9\\u76db\\u7535\\u7ebf\\u7535\\u7f06\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "f99\\u53e3\\u5e02\\u7f8a\\u5c9a\\u954"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "056316\", \"factory\": \"\\u9f99\\u53e"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\0\362\31\264\215{\"origin\": \"\\u5c71\\u4e1c\\u7"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "a\\u96e8\\u6da6\\u8def17\\u53f7\", \"n"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "aipai\"}\0\0\0\376\1\0\352^\351%{\"origin\": \"\\u5"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u96e8\\u6da6\\u98df\\u54c1\\u6709\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "56fd\", \"price\": \"1\", \"barcode\": "..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "u96e8\\u6da6\\u8def17\\u53f7\", \"nam"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u76db\\u7535\\u7ebf\\u7535\\u7f06\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "99\\u53e3\\u5e02\\u7f8a\\u5c9a\\u9547"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "56316\", \"factory\": \"\\u9f99\\u53e3"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\362\31\264\215{\"origin\": \"\\u5c71\\u4e1c\\u77"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "urce\": \"kuaipai\", \"barcode\": \"69"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u7f06\\u6709\\u9650\\u516c\\u53f8\"}"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "9a\\u9547\\u653f\\u5e9c\\u9a7b\\u5730"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "99\\u53e3\\u9f99\\u76db\\u7535\\u7ebf"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "4e1c\\u7701\\u9f99\\u53e3\\u5e02\\u7f"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, ", \"country\": \"\\u7f8e\\u56fd\", \"pr"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "e02\\u5efa\\u90ba\\u533a\\u96e8\\u6da"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "53f8\", \"source\": \"kuaipai\"}\0\0\0\376\1"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "tory\": \"\\u5357\\u4eac\\u96e8\\u6da6"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "1\\u4e1c\\u7701\\u9f99\\u53e3\\u5e02\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "rcode\": \"6924732056316\", \"factor"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "16c\\u53f8\"}\0\0\0\352\1\0\362\31\264\215{\"origin\": "..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "u9a7b\\u5730\", \"source\": \"kuaipai"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "u7535\\u7ebf\\u7535\\u7f06\\u6709\\u9"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "3\\u5e02\\u7f8a\\u5c9a\\u9547\\u653f\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, " \"factory\": \"\\u9f99\\u53e3\\u9f99\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "rigin\": \"\\u5c71\\u4e1c\\u7701\\u9f9"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\"kuaipai\", \"barcode\": \"692473205"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "arcode\": \"1234\", \"factory\": \"\\u5"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "f7\", \"name\": \"1234\", \"country\": "..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\": \"\\u5357\\u4eac\\u5e02\\u5efa\\u90"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "u6709\\u9650\\u516c\\u53f8\", \"sourc"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "5e9c\\u9a7b\\u5730\", \"source\": \"ku"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "76db\\u7535\\u7ebf\\u7535\\u7f06\\u67"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u53e3\\u5e02\\u7f8a\\u5c9a\\u9547\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "316\", \"factory\": \"\\u9f99\\u53e3\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\264\215{\"origin\": \"\\u5c71\\u4e1c\\u7701"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ce\": \"kuaipai\", \"barcode\": \"6924"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "7f06\\u6709\\u9650\\u516c\\u53f8\"}\0\0"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u9547\\u653f\\u5e9c\\u9a7b\\u5730\","..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "56fd\", \"image\": \"http://src.kuai"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "1234\", \"factory\": \"\\u5357\\u4eac\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\": \"1234\", \"country\": \"\\u7f8e\\u5"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u4eac\\u5e02\\u5efa\\u90ba\\u533a\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "0\\u516c\\u53f8\", \"source\": \"kuaip"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "653f\\u5e9c\\u9a7b\\u5730\", \"source"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "9f99\\u76db\\u7535\\u7ebf\\u7535\\u7f"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u9f99\\u53e3\\u5e02\\u7f8a\\u5c9a\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "732056316\", \"factory\": \"\\u9f99\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\0\352\1\0\362\31\264\215{\"origin\": \"\\u5c71\\u4e1c"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, " \"source\": \"kuaipai\", \"barcode\":"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "7535\\u7f06\\u6709\\u9650\\u516c\\u53"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u5c9a\\u9547\\u653f\\u5e9c\\u9a7b\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "u6709\\u9650\\u516c\\u53f8\", \"sourc"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "code\": \"1234\", \"factory\": \"\\u535"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\", \"name\": \"1234\", \"country\": \"\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, " \"\\u5357\\u4eac\\u5e02\\u5efa\\u90ba"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "709\\u9650\\u516c\\u53f8\", \"source\""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "53f\\u5e9c\\u9a7b\\u5730\", \"source\""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "f99\\u76db\\u7535\\u7ebf\\u7535\\u7f0"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "u9f99\\u53e3\\u5e02\\u7f8a\\u5c9a\\u9"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "32056316\", \"factory\": \"\\u9f99\\u5"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\352\1\0\362\31\264\215{\"origin\": \"\\u5c71\\u4e1c\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\"source\": \"kuaipai\", \"barcode\": "..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "535\\u7f06\\u6709\\u9650\\u516c\\u53f"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "f8a\\u5c9a\\u9547\\u653f\\u5e9c\\u9a7"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, ": \"\\u9f99\\u53e3\\u9f99\\u76db\\u753"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "fa\\u90ba\\u533a\\u96e8\\u6da6\\u8def"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\"source\": \"kuaipai\"}\0\0\0\376\1\0\352^\351%{\""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\"\\u5357\\u4eac\\u96e8\\u6da6\\u98df\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "y\": \"\\u7f8e\\u56fd\", \"price\": \"1\""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u90ba\\u533a\\u96e8\\u6da6\\u8def17"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ource\": \"kuaipai\"}\0\0\0\376\1\0\352^\351%{\"or"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\1\0\352^\351%{\"origin\": \"\\u5357\\u4eac\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "cpasswd\"}\0\0\0006\1\0\324)H\243{\"source\": \"k"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "LIMIT01floorrand02xFROMINFORMATI"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "e\": \"1234ANDSELECT1FROMSELECTCOU"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "6d77\\u51a0\\u751f\\u56ed\\u8702\\u52"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ipai\", \"barcode\": \"6917486003668"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\"kuaipai\", \"barcode\": \"862857\"}\0"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, ", \"factory\": \"\\u4e0a\\u6d77\\u51a0"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "E\0052\226{\"source\": \"kuaipai\", \"barco"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "56935b10\"}\0\0\0I\1\0u\357\350f{\"source\": \""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "CAST1ASINTSELECT0FROMDUALENDFROM"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\237{\"source\": \"kuaipai\", \"barcode\""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "T1ASINTSELECT0FROMDUALENDFROMDUA"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "33a\\u91d1\\u7696\\u8def389\\u53f7\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "TIONSCHEMATABLESLIMIT01floorrand"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\335\202\252\271{\"source\": \"kuaipai\", \"barco"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "9c\\u852c\\u996e\\u54c1\\u80a1\\u4efd"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\0\0000\1\0\20\377\10\237{\"source\": \"kuaipai\", \""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "LECT1ELSEDROPFUNCTIONEEyeWebSec\""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ipai\", \"barcode\": \"1234AND9KLIKE"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "9yMmRZcs80801.jpg\"}\0\0\1\f\1\0M\r\313;{\"n"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ndise/135880/AK-1101071302007031"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "CALA-A23BK15052K03-15.jpg\", \"bar"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, ".com/upload/merchandise/137540/A"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "source\": \"operationcenter\", \"ima"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "NTA/\\u5b89\\u8e0f\", \"barcode\": \"6"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "urce\": \"operationcenter\", \"brand"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "{\"source\": \"operationcenter\", \"i"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "144125/SENMA-12095312006-0013-16"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "3\", \"name\": \".\\u68ee\\u9a6c\\u7070"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "code\": \"2MS30558590\", \"ctime\": \""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, ": \"1427476445\"}\0\0\1r\1\0\20\37~8{\"name\""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "u56fe\\u6848\\u957f\\u8896\\u9488\\u7"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "A-12019113102-1000-16.jpg\", \"bar"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "1071312092-8341-16.jpg\", \"barcod"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\"source\": \"operationcenter\", \"im"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "/MICKEY-2MS30503500-16.jpg\", \"ba"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, ">\1\0\375\267n\356{\"source\": \"operationcent"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\1=\1\0\22\227#\376{\"source\": \"operationcen"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, ": \"http://a.vpimg4.com/upload/me"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "IA\\u6a59\\u7ea2/\\u591a\\u8272\\u517"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "se/124283/TONYPAULO-TNC213121019"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\"barcode\": \"W8331703500M\", \"proc"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "tp://a.vpimg3.com/upload/merchan"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "er\", \"image\": \"http://gw.alicdn."..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "1485843.jpg\", \"ctime\": \"14274764"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "_!!891605331.jpg\", \"ctime\": \"142"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "1439302720053004005\", \"procode\":"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "XX_!!928417138.jpg\", \"ctime\": \"1"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\"561439704\", \"ctime\": \"142747644"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "2000199\", \"procode\": \"551339633\""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "f\\u68c9\\u5973\\u7ae5\\u8fde\\u80a9\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "871308079\", \"procode\": \"35134020"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "rcode\": \"551311109080052044107\","..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "XHK472-16.jpg\", \"barcode\": \"8859"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "cdn.com/bao/uploaded/i2/36360759"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "427476463\"}\0\0\1q\1\0\16\271\341q{\"name\": \"3"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "5e3d\\u4f11\\u95f2\\u957f\\u8896\\u59"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, " \"barcode\": \"6900411833102\", \"so"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "er\", \"image\": \"http://a.vpimg4.c"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u957f\\u88e4D2223621_\\u552f\\u54c"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "708301\", \"name\": \"\\u56fd\\u5185\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "T2xw_OXBXaXXXXXXXX_!!1986466273."..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "76476\"}\0\0\0011\1\0x\341\371\271{\"name\": \"\\u570"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "d\": \"\\u963f\\u5e03\", \"barcode\": \""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, " \"barcode\": \"113430F8261912\", \"p"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "{\"name\": \"\\u4eae\\u9ed1\\u8272\\u6f"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "476491\"}\0\0\1G\1\0A\321\241\265{\"name\": \"\\u57"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, " \"8222055101\", \"source\": \"operat"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "3490_\\u552f\\u54c1\\u4f1a\", \"sourc"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "}\0\0\1q\1\0f;\241\354{\"name\": \"\\u4eca\\u517"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ce\": \"operationcenter\", \"image\":"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "//a.vpimg3.com/upload/merchandis"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "JD-J41054149-16.jpg\", \"barcode\":"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "merchandise/342862/JD-J51006180-"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "se/184194/JD-J43020640-16.jpg\", "..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\": \"1427476500\"}\0\0\1^\1\0,i\335\26{\"name"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "32100g\\uff0c\\u5e2e\\u52a9\\u51c0\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "0\\u5316\\u9ed1\\u5934\\uff0c\\u5300\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\305U\214\337{\"name\": \"\\u59ae\\u7ef4\\u96c5"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "://a.vpimg2.com/upload/merchandi"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "u201d\\u7684\\u5065\\u5eb7\\u7f8e\\u8"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ff0c\\u6e05\\u6d01\\u7684\\u540c\\u65"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "84dd\\u8272\\u65f6\\u5c1a\\u957f\\u88"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u88e4K0222AX07-990_\\u552f\\u54c1"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "m/upload/merchandise/8949/ZA-692"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "3d\\u957f\\u8896\\u68c9\\u670d \\u821"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "5\"}\0\0\1\231\1\0V\317\21Z{\"name\": \"\\u59ec\\u8"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\": \"operationcenter\", \"image\": \""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "mage\": \"http://a.vpimg3.com/uplo"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "1d\\u66fcWSM\\u5973\\u88c5\\u79fb\\u5"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\"\\u5361\\u5e15Kappa\\u5973\\u6b3e\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "c1\\u4f1a\", \"ctime\": \"1427476485\""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "900088373758\", \"name\": \"\\u5361\\u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "urce\": \"operationcenter\", \"image"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "3\\u573a\\u5973\\u6b3e\\u706b\\u7130\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "0-16.jpg\", \"barcode\": \"3TB49A374"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "957f\\u88e416248531-1_\\u552f\\u54c"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "-16.jpg\", \"barcode\": \"6951664089"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "NTA-16228114-1-16.jpg\", \"barcode"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "AIGE-3TB39A06210-16.jpg\", \"barco"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "3c\\u82b1\\u8272\\u5706\\u82b1\\u4e1d"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "822229313\", \"procode\": \"16237701"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "'\255\306\221{\"name\": \"\\u53f0\\u683c\\u9ed1"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "57f\\u6548\\u4fdd\\u6e7f\\u6c34\\u51d"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "0f\", \"barcode\": \"6913794854046\","..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "u4ea7\\u9c7c\\u8089\\u6d77\\u9c9c\\u9"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "load/merchandise/37740/TGGC-P066"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "load/merchandise/250182/GAVVE-3G"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ncenter\", \"image\": \"http://a.vpi"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "4SNOOPY-\\u5973\\u7ae5\\u7c73\\u7070"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\\u536b\\u8863W314010731_\\u552f\\u5"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "e5\\u5973\\u7ae5\\u767d\\u8272\\u8fde"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "5973\\u7ae5\\u5973\\u7ae5\\u9ec4\\u82"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ctime\": \"1427476493\"}\0\0\1F\1\0b\216/\32{"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "5176_\\u552f\\u54c1\\u4f1a\", \"sourc"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "mage\": \"http://a.vpimg2.com/uplo"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "g\271\211\37{\"name\": \"\\u591a\\u62c9\\u7f8e"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "2f\\u54c1\\u4f1a\", \"source\": \"oper"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "andise/178883/DUOLAMEI-1145T-16."..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "CT524\", \"ctime\": \"1427476508\"}\0\0"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "800BB 80g\\u5e76\\u53e3\\u786c\\u76d"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\", \"image\": \"http://a.vpimg2.com"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "\"}\0\0\1\272\1\0\245\2510\244{\"name\": \"\\u6b27\\u83"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "5f\\u4f24\\u590d\\u5143\\u6da6\\u53d1"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "4c1\\u4f1a\", \"source\": \"operation"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ter\", \"image\": \"http://a.vpimg4."..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "843A32285_\\u552f\\u54c1\\u4f1a\", \""..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "ource\": \"operationcenter\", \"imag"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "7/PAIPUER-2207590305-4.jpg\", \"ba"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "6\", \"procode\": \"CD11323J1\", \"cti"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "e\\u5e3d\\u8868\\u6f14\\u5e3d\\u5b50\\"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "f\\u54c1\\u4f1a\", \"source\": \"opera"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "d/merchandise/91659/PKLD-LUWE085"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "enter\", \"image\": \"http://gw.alic"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "g3.com/upload/merchandise/112494"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "3.com/upload/merchandise/269382/"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, " \"03118845\", \"procode\": \"C134Q07"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "f1a\", \"source\": \"operationcenter"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, " \"image\": \"http://a.vpimg3.com/u"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, " \"6954460853185\", \"procode\": \"TE"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "me\": \"1427476542\"}\0\0\0014\1\0\340\232d\340{\"na"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+poll([{fd=7, events=POLLIN|POLLERR|POLLHUP}], 1, 3000) = 1 ([{fd=7, revents=POLLIN}])
+recvfrom(7, "f\\u7c73\\u4e9aMiamia\\u9ed1/\\u7070"..., 8192, MSG_DONTWAIT, NULL, NULL) = 8192
+write(8, "027\\u957f\\u8896\\u5706\\u9886\\u6bd"..., 8192) = -1 ENOSPC (No
+space left on device)
+write(8, " \"brand\": \"\\u98d8\\u857e\", \"barco"..., 8192) = -1 ENOSPC (No
+space left on device)
+close(8)                                = 0
+unlink("/tmp/php7fU7Uu")                = 0
+pipe2([8, 9], O_CLOEXEC)                = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD,
+child_tidptr=0x7ff7f814d9d0) = 28416
+close(9)                                = 0
+fcntl(8, F_SETFD, 0)                    = 0
+read(8, "PING 42.236.20.143 (42.236.20.14"..., 8192) = 118
+read(8, ^C <unfinished ...>

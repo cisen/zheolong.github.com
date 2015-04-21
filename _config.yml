@@ -5,13 +5,15 @@ locale: en_US
 description: Don't go gentle into that good night...
 logo: site-logo.png
 search: true
-url: http://localhost:4000
+baseurl: ""
+#url: http://localhost:4000
 
 
 # Jekyll configuration
 
 permalink:   /:categories/:title/
-markdown:    kramdown
+#markdown:    kramdown
+markdown:   redcarpet
 highlighter: pygments
 sass:
   sass_dir: _sass
