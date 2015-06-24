@@ -14,6 +14,8 @@ baseurl: ""
 permalink:   /:categories/:title/
 #markdown:    kramdown
 markdown:   redcarpet
+redcarpet:
+    extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
 highlighter: pygments
 sass:
   sass_dir: _sass

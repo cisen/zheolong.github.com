@@ -335,11 +335,11 @@ zookeeper.connect
 Topic级的配置以及默认值会在[后面](https://kafka.apache.org/documentation.html#topic-config)详细说明。
 
 | 属性        | 默认值           | 说明  |
-| ------------- |:-------------:|:-----|
+| ------------- | ------------- |:-----|
 | broker.id      |              | broker在集群内的唯一id，非负整数 |
 | log.dirs      | /tmp/kafka-logs      |   Kafa数据存储目录，逗号分隔；创建新的partition时，会选择partition数量最少的目录 |
 | port | 6667      |    服务端接受客户端连接的端口 |
-|zookeeper.connect|设置zk连接字符串，例如hostname1:port1,hostname2:port2,hostname3:port3；zk还可以设置"chroot"路径，可以将kafka的相关数据放在该节点路径下，这样可以允许多个kafka集群或其他zk相关应用连接该zk集群，例如hostname1:port1,hostname2:port2,hostname3:port3/chroot/path，表示将此集群相关数据放在/chroot/path路径下，注意在启动kafka集群前，必须创建该路径，并且consumers也必须使用此连接字符串 |
+|zookeeper.connect| \ | 设置zk连接字符串，例如hostname1:port1,hostname2:port2,hostname3:port3；zk还可以设置"chroot"路径，可以将kafka的相关数据放在该节点路径下，这样可以允许多个kafka集群或其他zk相关应用连接该zk集群，例如hostname1:port1,hostname2:port2,hostname3:port3/chroot/path，表示将此集群相关数据放在/chroot/path路径下，注意在启动kafka集群前，必须创建该路径，并且consumers也必须使用此连接字符串 |
 | message.max.bytes	| 1000000 | 服务端可接收的消息大小上限，与consumers的maximum fetch size相配合，否则producers有可能发送过大消息，导致消费不了 | 
 |num.network.threads|3|处理网络请求的线程数|
 |num.io.threads|8|用于执行请求的I/O线程数，应至少超过硬盘数|
@@ -417,7 +417,7 @@ group.id
 zookeeper.connect
 
 | 属性        | 默认值           | 说明  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| :----- |
 |group.id|	|	A string that uniquely identifies the group of consumer processes to which this consumer belongs. By setting the same group id multiple processes indicate that they are all part of the same consumer group.|
 |zookeeper.connect|		|Specifies the ZooKeeper connection string in the form hostname:port where host and port are the host and port of a ZooKeeper server. To allow connecting through other ZooKeeper nodes when that ZooKeeper machine is down you can also specify multiple hosts in the form hostname1:port1,hostname2:port2,hostname3:port3. The server may also have a ZooKeeper chroot path as part of it's ZooKeeper connection string which puts its data under some path in the global ZooKeeper namespace. If so the consumer should use the same chroot path in its connection string. For example to give a chroot path of /chroot/path you would give the connection string as hostname1:port1,hostname2:port2,hostname3:port3/chroot/path.|
 |consumer.id	|null| Generated automatically if not set.|
