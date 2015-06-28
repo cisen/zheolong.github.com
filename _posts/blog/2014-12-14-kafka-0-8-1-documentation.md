@@ -13,32 +13,22 @@ date: 2014-12-14T12:54:02+08:00
 
 ## 前言
 
-Apache Kafka is publish-subscribe messaging rethought as a distributed commit log.
-
 Apache Kafka是一个发布订阅消息传送，可以想象为分布式提交的日志
 
-Fast
-A single Kafka broker can handle hundreds of megabytes of reads and writes per second from thousands of clients.
+高性能
 
-迅捷
 单个Kafka broker每秒可以处理来自上千台客户端的几百兆字节的读取和写入。
 
-Scalable
-Kafka is designed to allow a single cluster to serve as the central data backbone for a large organization. It can be elastically and transparently expanded without downtime. Data streams are partitioned and spread over a cluster of machines to allow data streams larger than the capability of any single machine and to allow clusters of co-ordinated consumers
-
 可扩展
+
 Kafka被设计允许单个集群作为大型机构的中央数据骨干。在不停止服务的情况下，可弹性透明地扩展。数据流被分片，并分布在集群的机器中，使得数据流远远大于单个机器的容量，允许协同的消费者集群。
 
-Durable
-Messages are persisted on disk and replicated within the cluster to prevent data loss. Each broker can handle terabytes of messages without performance impact.
-
 可靠性
+
 消息被持久化保存在硬盘上，并在集群内复制，以防止数据丢失。在不损失性能的情况下，每个broker可以处理几T的消息。
 
-Distributed by Design
-Kafka has a modern cluster-centric design that offers strong durability and fault-tolerance guarantees.
-
 分布式设计
+
 Kafka采用现今的cluster-centric设计，以提供强大的可靠性和容错性保障。
 
 
@@ -134,9 +124,9 @@ consumer实例以消息存储的顺序消费消息。
 
 #### Metrics
 
-Kafka常用于运行监测数据。这涉及到聚合从分布式应用中得到的数据，以产生运行数据的集中订阅源。
+Kafka常用于运行监测数据。这涉	及到聚合从分布式应用中得到的数据，以产生运行数据的集中订阅源。
 
-#### Log Aggregation
+#### 日志聚合
 
 许多人将Kafka替代日志聚合作为解决方案。日志聚合通常从服务器上收集物理日志文件，并将其放入中心位置（文件服务器或HDFS）进行处理。Kafka抽象了文件细节，将日志或事件数据抽象为消息流。允许低延迟的处理，支持多数据源和分布式数据消费。相比于以日志为中心的系统如**Scribe**或**Flume**，Kafka提供了同样高的性能、更强的可靠性（因为副本）、耕地的端到端延迟。
 
@@ -451,7 +441,37 @@ zookeeper.connect
 * serializer.class
 
 | 属性        | 默认值           | 说明  |
-| ------------- |:-------------:| -----:|
+| ------------- |:-------------:| :----- |
+| metadata.broker.list | -- | 用于获取元信息（topics，partitions，replicas）的broker url。用于发送实际数据的socket连接是根据所获取的元信息建立的。格式为host1:port1,host2:port2，可以是brokers的子集，也可以是指向子集的VIP |
+| request.required.acks | 0 | 指的是确认produce成功需要的ack数量。<br> * 0, 不需要ack（同0.7），低延迟，但是无法保障可靠性（服务挂了以后会导致数据丢失）<br> * 1, leader副本写成功即可（仅会丢失写入到出故障的leader但未同步到其他副本的数据）<br> * -1，in-sync副本都写成功。但是无法完全避免丢数据，因为in-sync在有些情况下可能只有1个副本。如果想要确保in-sync的副本数不低于一定数量，需要设置topic级别的min.insync.replicas setting |
+| request.timeout.ms | 10000 | 在达到指定request.required.acks之前，broker的等待时间，超时后会发送错误给client |
+| producer.type | sync | * sync，同步发送 <br> * async，异步发送，交给client的后台线程去发送，可以批量发送以增加吞吐，但是发送失败时会丢弃数据 |
+| serializer.class | kafka.serializer.DefaultEncoder | 消息的serializer类。默认的encoder将参数原样返回 | 
+| key.serializer.class | -- | key的serializer类，不指定的话与消息的默认serializer行为类似 |
+| partitioner.class | kafka.producer.DefaultPartitioner | 消息的partitioner类，默认的partitioner是根据key进行hash来选择partition |
+| compression.codec | none | 消息压缩类型，none，gzip，snappy | 
+| compressed.topics | null | 指定将以上指定的压缩类型施加到哪些topic上，如果为null，则施加到所有topic上 |
+| message.send.max.retries | 3 | 消息发送重试次数（注意：ack丢失的情况下，有可能造成消息重复发送）|
+| retry.backoff.ms | 100 | 在每次重试前，producer会刷新相应topic的元信息，以检测是否有新的leader。leader选举需要一些时间，所以此属性指定了producer在刷新元信息之前的等待时间 | 
+| topic.metadata.refresh.interval.ms | 600 * 1000 | 在（partition missing，leader不可用）时，producer会刷新topic元信息，还有就是按照该属性的值定期刷新。<br> * 如果此值为负数，那么就不会定期刷新。<br> * 如果设置为0（不建议），每条消息发送完以后都会刷新，如果不发送任何消息，那么就不会刷新元信息 | 
+| queue.buffering.max.ms | 5000 | 采用async发送模式时，缓存数据的最长时间。例如设置为100，producer会尝试积累100ms的消息以一次发送，提高吞吐，但是会增加延迟 | 
+| queue.buffering.max.messages | 10000 | 采用async发送模式时，在producer必须被阻塞或必须丢弃数据前，其队列中可以缓存的消息最大条数 |
+| queue.enqueue.timeout.ms | -1 | 在异步模式下，如果消息缓存已经达到了queue.buffering.max.messages，在丢弃消息之前，producer等待的时间。<br> * 如果设置为0，那么消息要么马上入队列，要么因为队列满而直接返回失败（即，非阻塞）。 <br> * 如果设置为-1，调用会一直阻塞直到入队列成功 |
+| batch.num.messages | 200 | 在异步模式模式下，批量发送的消息条数。在达到这个数量，或时间达到queue.buffer.max.ms时发送 |
+| send.buffer.bytes | 100 * 1024 | socket的发送缓冲区大小 |
+| client.id | "" | client.id是每个请求中加入的用户自定义字符串，用于跟踪调用。在逻辑上应该标识发出请求的应用 |
+
+与producer配置相关的更多细节请参见scala类
+
+kafka.producer.ProducerConfig.
+
+### 3.4 New Producer Configs
+
+我们正在替换旧的producer。新的producer代码在trunk里可以找到，是beta版本。新producer的配置如下
+
+| 名称        | 类型           | 默认值  | 重要程序 | 说明 |
+| ------------- |-------------| ----- | ---- | :---- |
+| bootstrap.servers | list | -- | high | 
 
 
 ## 4. Design
