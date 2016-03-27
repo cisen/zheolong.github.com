@@ -69,3 +69,32 @@ size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream);
 ### fstream
 
 采用c++而不用c的主要考虑是类型安全、面向对象，但是这取决于你的项目整体对文件的操作是否都可以使用fstream，如果可以，那么请毫不犹豫得使用fstream，其效率不会比c的标准库行数慢，所耗内存也不会比c的标准库函数多太多。
+
+```
+while (std::getline(fs, line))
+{}
+```
+
+在上面的代码中没有必要用```fs.good()```检测读取是否成功，对于```good```，c++的文档如下：
+
+> The function returns true if none of the stream's error flags (eofbit, failbit and badbit) are set.
+
+需要注意的是，eof等标志位是在尝试读取失败以后才被设置的，而非之前，所以请在读取之后检测。
+
+错误的方式如下：
+
+```
+while (!somestream.eof()) {
+    read_data();
+    process_data();
+}
+```
+
+很可能导致最后一行被读取两次。对于为何这种通过检测```eof```来结束循环的方式不正确，请参考这篇博客[Reading files](http://coderscentral.blogspot.tw/2011/03/reading-files.html)
+
+## 行分隔符
+
+如果在unix下读取dos格式的文件，因为dos格式所用的换行符是```\r\n```，所以仅仅去掉```\n```是不够的，还需要去掉```\r```，否则对于文本文件，在打印每一行时，会因为```\r```而打印不出期望的结果。
+
+例如，```cout << "ab\r"<< "c" << endl;```会打印出```cb```而非```abc```，因为```\r```在unix中代表回到当前行的头部开始打印，所以后面的c会“覆盖”掉a。
+
