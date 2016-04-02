@@ -7,6 +7,7 @@ excerpt:
 tags: [Kafka, XFS, Disk Usage, Apparent Size, Df, Du, Preallocation]
 comments: true
 share: true
+counter: true
 image:
   feature:
 date: 2014-12-06T15:12:25+08:00

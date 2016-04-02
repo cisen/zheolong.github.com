@@ -7,6 +7,7 @@ excerpt:
 tags: []
 comments: true
 share: true
+counter: true
 image:
   feature:
 date: 2016-03-27T21:34:05+08:00

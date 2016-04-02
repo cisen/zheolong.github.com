@@ -7,6 +7,7 @@ excerpt:
 tags: []
 comments: true
 share: true
+counter: true
 image:
   feature:samza-state-example.png
 date: 2015-03-13T21:44:50+08:00

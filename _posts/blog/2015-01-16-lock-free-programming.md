@@ -7,6 +7,7 @@ excerpt:
 tags: []
 comments: true
 share: true
+counter: true
 image:
   feature:its-lock-free.png
 ngdate: 2015-01-16T14:24:54+08:00

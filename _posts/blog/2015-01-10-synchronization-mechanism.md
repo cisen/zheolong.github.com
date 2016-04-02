@@ -7,6 +7,7 @@ excerpt:
 tags: [RCU, lock]
 comments: true
 share: true
+counter: true
 image:
   feature:
   

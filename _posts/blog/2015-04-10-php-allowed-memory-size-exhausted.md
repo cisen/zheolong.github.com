@@ -7,6 +7,7 @@ excerpt:
 tags: [php qbus]
 comments: true
 share: true
+counter: true
 image:
   feature:
 date: 2015-04-10T14:06:59+08:00
