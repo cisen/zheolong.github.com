@@ -5,6 +5,8 @@ modified:
 categories: blog
 excerpt:
 tags: [php qbus]
+comments: true
+share: true
 image:
   feature:
 date: 2015-04-10T14:06:59+08:00

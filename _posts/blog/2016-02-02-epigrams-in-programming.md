@@ -5,6 +5,8 @@ modified:
 categories: blog
 excerpt:
 tags: []
+comments: true
+share: true
 image:
   feature:
 date: 2016-02-02T19:13:59+08:00
