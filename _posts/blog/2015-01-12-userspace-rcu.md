@@ -13,20 +13,10 @@ image:
 date: 2015-01-12T10:17:09+08:00
 ---
 
-## RCU
-
 ## lock & lock-free
 
-easy -> difficult
-
-lock -> lock-free
-
-lock: 
-
-spinlock、mutex -> rw lock -> rcu
-
 |Lock|Description|
-|--|--|
+|---|---|
 |Mutex|只允许一个线程同时获取，也就是同时只允许一个线程进入临界区，其他线程会挂起，等待holder释放Mutex|
 |Recursive lock|Recursive lock是Mutex的变种，允许一个线程在释放之前多次获取，其他线程阻塞直到此线程释放同样的次数，可用于递归迭代，也可以用于多个函数分别获取锁的情况|
 |Read-write lock|shared-exclusive lock，适用于读多写少的情况。没有写者时，读者可以同时执行读操作；写者需要阻塞等待所有的读者释放锁；读者需要阻塞等待所有写者释放锁|
@@ -35,25 +25,30 @@ spinlock、mutex -> rw lock -> rcu
 |Double-checked lock|Double-checked lock是为了解决获取锁前需要检测获取条件的损耗，但是这种锁不是很安全，尽量不要使用|
 |RCU|读几乎无代价，写会延迟，在写很少且不要求数据一致的情况下高效|
 
-题外话：futex 减少非竞争状态下的系统调用
+题外话：futex减少非竞争状态下的系统调用
+
+## RCU
 
 每种锁都有特点，决定了适用的场景，RCU适用于写操作很少（注意，不是写者少）、不要求数据一致的情况下（如果写者很多会造成不一致的情况，一般情况下写者多于一个，要求一致性的场景下RCU不适用）
 
-02年加入内核
-允许同时读写
-互斥锁  读者写者一视同仁，互斥访问
-读写锁  没有写的情况下，可以同时读
-RCU    一写多读同时
+### RCU特点
+RCU机制是在02年加入内核的，特点就是允许同时读写
+
+|类型|特点|
+|---|---|
+|互斥锁 | 读者写者一视同仁，互斥访问 |
+|读写锁 | 没有写的情况下，可以同时读 |
+|RCU |  一写多读同时 |
 
 写者在更新之前会检测在此之前的读操作都完成了，否则写者就等待，此时写者持有最新版本，正在读的读者会得到旧的版本。写者更新完后还需要释放旧版本数据占用的空间。
 
+### RCU三机制
 
-RCU三机制
-发布-订阅机制（用于插入）
-等待已经存在的读者完成读取操作（用于删除）
-维护最新数据的多个版本（对于读者）
+* 发布-订阅机制（用于插入）
+* 等待已经存在的读者完成读取操作（用于删除）
+* 维护最新数据的多个版本（对于读者）
 
-发布-订阅
+#### 发布-订阅
 
 	  1 struct foo {
 	  2   int a;
@@ -73,7 +68,6 @@ RCU三机制
 10-14可能被编译器优化或CPU乱序执行，比如11、12完成，然后执行了14，那么新的读者就会读取到未完全初始化的数据（p->c没有初始化）
 
 需要用内存屏障以保证CPU执行完11、12、13以后再执行14.
-
 
 	  1 p->a = 1;
 	  2 p->b = 2;
@@ -132,30 +126,30 @@ rcu_read_lock和rcu_read_unlock定义的read-size section，目的是。不会�
 
 单向循环链表
 
-	1 struct foo {
-	  2   struct hlist_node *list;
-	  3   int a;
-	  4   int b;
-	  5   int c;
-	  6 };
-	  7 HLIST_HEAD(head);
-	  8 
-	  9 /* . . . */
-	 10 
-	 11 p = kmalloc(sizeof(*p), GFP_KERNEL);
-	 12 p->a = 1;
-	 13 p->b = 2;
-	 14 p->c = 3;
-	 15 hlist_add_head_rcu(&p->list, &head);
-	 
--
-	 
-	  1 rcu_read_lock();
-	  2 hlist_for_each_entry_rcu(p, q, head, list) {
-	  3   do_something_with(p->a, p->b, p->c);
-	  4 }
-	  5 rcu_read_unlock();
-	  
+```
+struct foo {
+  struct hlist_node *list;
+  int a;
+  int b;
+  int c;
+};
+HLIST_HEAD(head);
+
+/* . . . */
+
+p = kmalloc(sizeof(*p), GFP_KERNEL);
+p->a = 1;
+p->b = 2;
+p->c = 3;
+hlist_add_head_rcu(&p->list, &head);
+```
+```
+rcu_read_lock();
+hlist_for_each_entry_rcu(p, q, head, list) {
+  do_something_with(p->a, p->b, p->c);
+}
+rcu_read_unlock();
+```
 	  
 为何需要传递两个指针
 
@@ -171,7 +165,7 @@ hlist_replace_rcu()	hlist_del_rcu()	hlist_for_each_entry_rcu()
 
 何时释放已经被删除或替换的数据元素，如何知道所有对此元素的读者都退出了
 
-## 等待已有读者完成
+#### 等待已有读者完成
 等待事情完成有很多机制，引用计数、读写锁、事件，RCU的优势在于可以等待20000个不同的事情，无需track每个事情，无需担心性能损失、扩展性限制、死锁、内存泄露，这些在track的策略中会出现。
 
 RCU read-side critical section
@@ -233,7 +227,7 @@ trick：read-side临界区不可block或sleep
 
 内核里实际代码很复杂，需要处理中断、NMI、CPU热插拔等，同时要保证性能和扩展性。
 
-如何保持更新的多版本
+#### 如何保持更新的多版本
 
 deletion
 
