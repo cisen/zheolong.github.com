@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Zookeeper"
+title: "Zookeeper and Zab"
 modified:
 categories: blog
 excerpt:
@@ -13,33 +13,33 @@ image:
 date: 2016-04-12T21:53:52+08:00
 ---
 
-本篇意在探究ZooKeeper实现原理，并非一篇使用手册。重点内容为Zab协议的原理（论文）以及其在ZooKeeper中的源码注解。
+本篇意在探究ZooKeeper实现原理，并非一篇使用手册。重点内容为Zab协议的原理（论文）以及其在ZooKeeper中的实现。
 
 ## [什么是ZooKeeper](https://cwiki.apache.org/confluence/display/ZOOKEEPER/Index)
 
-ZooKeeper是一个集中式服务，用于保存配置信息、命名，提供分布式同步和组服务（group services）。很多分布式应用中都会用到这些服务，每次实现这些服务，都需要修复很多bug，并且无法避免竞态条件。因为实现这些服务非常困难，所以很多应用选择绕开它们，使得应用难以管理，并且不易扩展。即使实现得没有问题，这些服务的不同实现也会使得对应用部署的管理异常困难。
+ZooKeeper是一个集中式服务，用于保存配置信息、命名，提供分布式同步和组服务（group services）。很多分布式应用中都会用到这些服务，每次实现这些服务，都需要修复很多bug，并且无法避免竞态条件（race condition）。因为实现这些服务非常困难，所以很多应用选择绕开它们，使得应用难以管理，并且不易扩展。即使实现得没有问题，这些服务的不同实现也会使得对应用部署的管理异常困难。
 
-ZooKeeper意在将这些不同的服务抽离成一个集中式协调服务的简单接口。该服务本身是分布式并且高可靠。实现了Consensus，组管理（group management）和存在协议（presence protocols），应用本身就不需要实现这些了，只需要利用ZooKeeper的组件和应用特定的情况结合即可。
+ZooKeeper意在将这些不同的服务抽离成一个集中式协调服务的简单接口。该服务本身是分布式并且高可靠。实现了Consensus、组管理（group management）和存在协议（presence protocols），应用本身就不需要实现这些了，只需要利用ZooKeeper的组件和应用特定的情况结合即可。
 
 ## [ZooKeeper概述](https://cwiki.apache.org/confluence/display/ZOOKEEPER/ProjectDescription)
 
-ZooKeeper是通过znode组成的共享的层次性命名空间来同步分布式应用的，很像文件系统。与常见文件系统不同的是，ZooKeeper具有对znode进行高吞吐、低延迟、高可用性、严格有序访问的特性。ZooKeeper的高性能使得其可以使用在大型分布式系统中，高可靠性使得大型系统避免单点故障问题，而严格有序使得客户端可以实现精确的同步原语。
+ZooKeeper是通过znode组成的共享的**层次性命名空间**来同步分布式应用的，很像文件系统。与常见文件系统不同的是，ZooKeeper具有对znode进行高吞吐、低延迟、高可用性、**严格有序**访问的特性。ZooKeeper的高性能使得其可以使用在大型分布式系统中，高可靠性使得大型系统避免单点故障问题，而严格有序使得客户端可以实现精确的同步原语。
 
 ZooKeeper提供的命名空间很像标准的文件系统。命名就是用斜杠“/”分隔的一系列路径元素。ZooKeeper命名空间中的每个znode都是由一条路径表示。每个znode有一个父节点，其路径就是该znode路径的前缀；只有根节点“/”没有父节点。如同标准的文件系统，znode如果有子节点也无法删除。
 
-ZooKeeper和标准文件系统的主要不同点是，znode可以具有相关联的数据（每个文件都是目录，反之亦然），znode所包含的数据是有限的。ZooKeeper是用来存储协调数据的：状态信息、配置、位置信息等。这种元信息通常都是以B或KB为单位。ZooKeeper内部设置了是否超过1M的检查，防止被用来存储大的数据。
+ZooKeeper和标准文件系统的主要不同点是，znode可以具有相关联的数据（每个文件都是目录，反之亦然），znode所包含的数据是有限的。ZooKeeper是用来存储协调数据的：状态信息、配置、位置信息等。这种**元信息**通常都是以B或KB为单位。ZooKeeper内部设置了是否超过1M的检查，防止被用来存储大的数据。
 
 ![image]({{ site.url }}/images/blog/zookeeper/zookeeper-architecture.png)
 
-服务本身是在一组机器上复制的，这些机器保持了数据的内存快照，并将处理日志（transactoin logs）和快照（snapshots）保存在持久性介质中。因为数据保持在内存中，ZooKeeper能够获得很高的吞吐量和较低的时延。内存数据库的缺点是所能管理的数据受限于内存大小，这是要保持znode所存数据尽量少的另一个原因。
+服务本身是在一组机器上复制的，这些机器保持了数据的**内存快照**，并将**事务日志**（transactoin logs）和**快照**（snapshots）保存在**持久性介质**中。因为数据保持在内存中，ZooKeeper能够获得很高的吞吐量和较低的时延。内存数据库的缺点是所能管理的数据受限于内存大小，这是要保持znode所存数据尽量少的另一个原因。
 
 组成ZooKeeper服务的所有机器都知道所有机器的地址。只要多数服务器可用，ZooKeeper服务就可用。客户端也必须知道服务器列表，并使用这个列表建立ZooKeeper服务的句柄。
 
-客户端只连接到一个ZooKeeper服务器。客户端保持TCP连接，用于发送请求，接收响应，获取watch事件，发送心跳包。如果与服务端的TCP连接断开，客户端会连接另一个服务器。当客户端第一次连接ZooKeeper服务时，第一个ZooKeeper服务器会为客户端建立一个session。如果客户端需要连接到另一个服务器，会与新服务器重建此session。
+客户端只连接到一个ZooKeeper服务器。客户端保持**TCP连接**，用于发送请求，接收响应，获取watch事件，发送**心跳包**。如果与服务端的TCP连接断开，客户端会连接另一个服务器。当客户端第一次连接ZooKeeper服务时，第一个ZooKeeper服务器会为客户端建立一个**会话**（session）。如果客户端需要连接到另一个服务器，会与新服务器重建此会话。
 
 Read请求会在客户端连接到的服务器本地处理。如果通过read请求对zonde设置watch，也是在ZooKeeper服务器本地监测的。Write请求会被转发到其他服务器，通过consensus以后才能产生响应。Sync请求也会被转发给另一个服务器，但是不会经过consensus。所以，服务器越多，read请求的吞吐量会越高，write请求的吞吐量会越低。
 
-顺序性对ZooKeeper来说是很重要的；几乎就是强迫症了。所有update都是完全顺序的。ZooKeeper实际上会用一个反应顺序的数字标记每个update，我们称此数字为zxid（ZooKeeper Transaction Id）。每个update都会有唯一的zxid。Read（和watch）会参照update的顺序。处理read请求的服务器会根据其最后处理的zxid对read响应进行标记。
+顺序性对ZooKeeper来说是很重要的；几乎就是强迫症了。所有update都是完全顺序的。ZooKeeper实际上会用一个反映顺序的数字标记每个update，我们称此数字为**zxid**（ZooKeeper Transaction Id）。每个update都会有**唯一**的zxid。Read（和watch）会参照update的顺序。处理read请求的服务器会根据其最后处理的zxid对read响应进行标记。
 
 ## [Zab](https://cwiki.apache.org/confluence/display/ZOOKEEPER/Zab)
 
@@ -54,12 +54,15 @@ Read请求会在客户端连接到的服务器本地处理。如果通过read请
 * deliver 递交（客户端已经可以看到这条消息的结果）
 * propose 提出（leader接收到消息，记录日志，并发出消息给其他quorum成员，等待ack）
 
+#### ABSTRACT
+
+本文是对ZooKeeper使用的一种完全有序广播协议——Zab协议的概述。从理论上来说，Zab很容易理解，也很容易实现，并且性能很高。在本文中，我们会给出ZooKeeper对Zab协议的需求，如何使用Zab协议，以及Zab协议是如何工作的。
+
 #### Introduction
 
-* update操作的顺序
-* 高性能
+在Yahoo!公司，我们开发了一种高性能、高可用的协调服务——ZooKeeper，很多大型应用可以利用ZooKeeper进行协调任务，例如**选主**（leader election）、**状态传播**（status propagation）和**集合**（rendezvous）。此服务实现了一种层次空间的数据节点——znode，客户端可以利用znode实现协调任务。我们发现此服务很容易扩展性能，能够满足Yahoo!的线上大规模（web-scale）关键应用的要求。ZooKeeper没有使用锁（locks），而是实现了一种**无等待（wait-free）共享数据对象**，并且严格保障对这些对象的**顺序性**操作。客户端利用这种保障实现各自的协调任务。通常，ZooKeeper的一个主要前提是对于应用来说，update的顺序性比其它协调技术（例如，**阻塞**）更重要。
 
-为了满足这些需求，ZooKeeper采用了一种完全有序的广播协议（totally ordered broadcast protocol）：Zab。
+为了满足这些需求，ZooKeeper采用了一种**完全有序**的广播协议（totally ordered broadcast protocol）：Zab。在实现我们的客户端保障时，完全有序的广播是很重要的；并且在每个服务器上保持ZooKeeper状态的**副本**（replicas）也是有必要的。这些副本通过完全有序的广播协议来保持一致，例如**复制状态机**（replicated state-machines）。本文关注点在于ZooKeeper对这种协议的需求及其实现的概述。
 
 一般ZooKeeper集群包含3至7台机器，虽然从设计角度来讲可以支持更多的机器，但是这个规模已经提供所需的性能和冗余。ZooKeeper集群如果有2f+1个机器，可以容忍f个机器的服务崩溃。
 
@@ -160,135 +163,135 @@ recovery过程的复杂性部分在于，某个时刻，大量的提议还在网
 
 我们一路跟踪代码下去即可，不用考虑其他太多的代码分支，大概知道意思即可。
 
-1. ./src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java
+1 ./src/java/main/org/apache/zookeeper/server/quorum/QuorumPeerMain.java
 
 ```java
-    quorumPeer.start()
+quorumPeer.start()
 ```
 
-2. ./src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java
-
-
-```java
-	  @Override
-	  public synchronized void start() {
-	      if (!getView().containsKey(myid)) {
-	          throw new RuntimeException("My id " + myid + " not in the peer list");
-	       }
-	      loadDataBase();
-	      startServerCnxnFactory();
-	      try {
-	          adminServer.start();
-	      } catch (AdminServerException e) {
-	          LOG.warn("Problem starting AdminServer", e);
-	          System.out.println(e);
-	      }
-	      startLeaderElection();
-	      /* 主要过程就在这里，因为QuorumPeer继承了
-	         ZooKeeperThread，所以此处调用的其实是
-	         QuorumPeer的run()函数 */
-	      super.start(); 
-	  }
-```
-
-3.  ./src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java
+2 ./src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java
 
 ```java
-    @Override
-    public void run() {
-    
-        ...
-        
-        try {
-            /*
-             * Main loop
-             */
-            while (running) {
-                /* Server的状态一共四种：LOOKING, FOLLOWING, LEADING, OBSERVING，
-                刚启动时为LOOKING状态 */
-                switch (getPeerState()) {
-                case LOOKING:
-                    LOG.info("LOOKING");
-
-                    if (Boolean.getBoolean("readonlymode.enabled")) {
-                        LOG.info("Attempting to start ReadOnlyZooKeeperServer");
-
-                        ...
-                        
-                    } else {
-                        try {
-                           reconfigFlagClear();
-                            if (shuttingDownLE) {
-                               shuttingDownLE = false;
-                               startLeaderElection();
-                               }
-                               
-                            /* LE为leader election的缩写，
-                            makeLEStrategy()是获取一种选主策略，
-                            上述论文中也提到了有两种选主策略，
-                            对应代码中就是LeaderElection和
-                            FastLeaderElection，如果不显示配置，
-                            默认会采用FastLeaderElection，
-                            lookForLeader会返回新的vote */
-                            setCurrentVote(makeLEStrategy().lookForLeader());
-                        } catch (Exception e) {
-                            LOG.warn("Unexpected exception", e);
-                            setPeerState(ServerState.LOOKING);
-                        }                        
-                    }
-                    break;
-                case OBSERVING:
-                    try {
-                        LOG.info("OBSERVING");
-                        setObserver(makeObserver(logFactory));
-                        observer.observeLeader();
-                    } catch (Exception e) {
-                        LOG.warn("Unexpected exception",e );
-                    } finally {
-                        observer.shutdown();
-                        setObserver(null);  
-                       updateServerState();
-                    }
-                    break;
-                case FOLLOWING:
-                    try {
-                       LOG.info("FOLLOWING");
-                        setFollower(makeFollower(logFactory));
-                        follower.followLeader();
-                    } catch (Exception e) {
-                       LOG.warn("Unexpected exception",e);
-                    } finally {
-                       follower.shutdown();
-                       setFollower(null);
-                       updateServerState();
-                    }
-                    break;
-                case LEADING:
-                    LOG.info("LEADING");
-                    try {
-                        setLeader(makeLeader(logFactory));
-                        leader.lead();
-                        setLeader(null);
-                    } catch (Exception e) {
-                        LOG.warn("Unexpected exception",e);
-                    } finally {
-                        if (leader != null) {
-                            leader.shutdown("Forcing shutdown");
-                            setLeader(null);
-                        }
-                        updateServerState();
-                    }
-                    break;
-                }
-                start_fle = Time.currentElapsedTime();
-            }
-        } finally {
-            ...
-        }
+@Override
+public synchronized void start() {
+    if (!getView().containsKey(myid)) {
+        throw new RuntimeException("My id " + myid + " not in the peer list");
+     }
+    loadDataBase();
+    startServerCnxnFactory();
+    try {
+        adminServer.start();
+    } catch (AdminServerException e) {
+        LOG.warn("Problem starting AdminServer", e);
+        System.out.println(e);
     }
+    startLeaderElection();
+    /* 主要过程就在这里，因为QuorumPeer继承了
+       ZooKeeperThread，所以此处调用的其实是
+       QuorumPeer的run()函数 */
+    super.start(); 
+}
 ```
 
-4. ./src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java
+
+3 ./src/java/main/org/apache/zookeeper/server/quorum/QuorumPeer.java
+
+```java
+@Override
+public void run() {
+    
+    ...
+    
+    try {
+        /*
+         * Main loop
+         */
+        while (running) {
+            /* Server的状态一共四种：LOOKING, FOLLOWING, LEADING, OBSERVING，
+            刚启动时为LOOKING状态 */
+            switch (getPeerState()) {
+            case LOOKING:
+                LOG.info("LOOKING");
+	
+                if (Boolean.getBoolean("readonlymode.enabled")) {
+                    LOG.info("Attempting to start ReadOnlyZooKeeperServer");
+	
+                    ...
+                    
+                } else {
+                    try {
+                       reconfigFlagClear();
+                        if (shuttingDownLE) {
+                           shuttingDownLE = false;
+                           startLeaderElection();
+                           }
+                           
+                        /* LE为leader election的缩写，
+                        makeLEStrategy()是获取一种选主策略，
+                        上述论文中也提到了有两种选主策略，
+                        对应代码中就是LeaderElection和
+                        FastLeaderElection，如果不显示配置，
+                        默认会采用FastLeaderElection，
+                        lookForLeader会返回新的vote */
+                        setCurrentVote(makeLEStrategy().lookForLeader());
+                    } catch (Exception e) {
+                        LOG.warn("Unexpected exception", e);
+                        setPeerState(ServerState.LOOKING);
+                    }                        
+                }
+                break;
+            case OBSERVING:
+                try {
+                    LOG.info("OBSERVING");
+                    setObserver(makeObserver(logFactory));
+                    observer.observeLeader();
+                } catch (Exception e) {
+                    LOG.warn("Unexpected exception",e );
+                } finally {
+                    observer.shutdown();
+                    setObserver(null);  
+                   updateServerState();
+                }
+                break;
+            case FOLLOWING:
+                try {
+                   LOG.info("FOLLOWING");
+                    setFollower(makeFollower(logFactory));
+                    follower.followLeader();
+                } catch (Exception e) {
+                   LOG.warn("Unexpected exception",e);
+                } finally {
+                   follower.shutdown();
+                   setFollower(null);
+                   updateServerState();
+                }
+                break;
+            case LEADING:
+                LOG.info("LEADING");
+                try {
+                    setLeader(makeLeader(logFactory));
+                    leader.lead();
+                    setLeader(null);
+                } catch (Exception e) {
+                    LOG.warn("Unexpected exception",e);
+                } finally {
+                    if (leader != null) {
+                        leader.shutdown("Forcing shutdown");
+                        setLeader(null);
+                    }
+                    updateServerState();
+                }
+                break;
+            }
+            start_fle = Time.currentElapsedTime();
+        }
+    } finally {
+        ...
+    }
+}
+```
+
+4 ./src/java/main/org/apache/zookeeper/server/quorum/FastLeaderElection.java
 
 ```java
 /**
@@ -496,9 +499,313 @@ recovery过程的复杂性部分在于，某个时刻，大量的提议还在网
             self.jmxLeaderElectionBean = null;
         }
     }
-}
-
+}	
 ```
+
+### 写操作
+
+1 ./src/java/main/org/apache/zookeeper/server/quorum//QuorumPeer.java
+
+```java
+case LEADING:
+    LOG.info("LEADING");
+    try {
+        setLeader(makeLeader(logFactory)); // 创建Leader对象
+        leader.lead(); // leader的主要过程就在这里
+        setLeader(null);
+    } catch (Exception e) {
+        LOG.warn("Unexpected exception",e);
+    } finally {
+        if (leader != null) {
+            leader.shutdown("Forcing shutdown");
+            setLeader(null);
+        }
+        updateServerState();
+    }
+    break;
+```
+
+2 ./src/java/main/org/apache/zookeeper/server/quorum/Leader.java
+
+```java
+void lead() throws IOException, InterruptedException {
+    ...
+	
+    startZkServer(); // 启动ZookeeperServer
+    ...
+}
+```
+
+3 ./src/java/main/org/apache/zookeeper/server/quorum/Leader.java
+	
+```java
+/**
+ * Start up Leader ZooKeeper server and initialize zxid to the new epoch
+ */
+private synchronized void startZkServer() {
+    ...
+    zk.startup(); // 这个zk是LeaderZooKeeperServer对象
+    ...
+}
+```
+
+4 ./src/java/main/org/apache/zookeeper/server/quorum/LeaderZooKeeperServer.java
+	
+```java
+@Override
+public synchronized void startup() {
+    super.startup(); // LeaderZooKeeperServer继承了ZooKeeperServer
+    if (containerManager != null) {
+        containerManager.start();
+    }
+}
+```
+
+5 ./src/java/main/org/apache/zookeeper/server/ZooKeeperServer.java
+
+```java
+public synchronized void startup() {
+    if (sessionTracker == null) {
+        createSessionTracker();
+    }
+    startSessionTracker();
+    setupRequestProcessors(); // 这里会调用不同的ZooKeeperServer派生类自己重写的方法，所以这里按照上面的逻辑，调用的是LeaderZooKeeperServer里的setupRequestProcessors方法
+  
+    registerJMX();
+  
+    state = State.RUNNING;
+    notifyAll();
+}
+```
+
+6 ./src/java/main/org/apache/zookeeper/server/quorum/LeaderZooKeeperServer.java
+
+```java
+@Override
+protected void setupRequestProcessors() {
+    /* 多个Processor级联，上游Processor处理完以后会调用下游的
+    Processor，firstProcessor在这里没用到，直接从
+    prepRequestProcessor开始看 */
+    RequestProcessor finalProcessor = new FinalRequestProcessor(this);
+    RequestProcessor toBeAppliedProcessor = new Leader.ToBeAppliedRequestProcessor(finalProcessor, getLeader());
+    commitProcessor = new CommitProcessor(toBeAppliedProcessor,
+            Long.toString(getServerId()), false,
+            getZooKeeperServerListener());
+    commitProcessor.start();
+    ProposalRequestProcessor proposalProcessor = new ProposalRequestProcessor(this,
+            commitProcessor);
+    proposalProcessor.initialize();
+    prepRequestProcessor = new PrepRequestProcessor(this, proposalProcessor);
+    prepRequestProcessor.start();
+    firstProcessor = new LeaderRequestProcessor(this, prepRequestProcessor);
+  	
+    setupContainerManager();
+}
+```
+
+7 ./src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java
+
+```java
+@Override
+public void run() {
+    try {
+        while (true) {
+            /* 在QuorumPeer类中，start函数调用了
+            startServerCnxnFactory，然后调用
+            cnxnFactory.start()，这里的cnxnFactory
+            是NIOServerCnxnFactory对象，所以这里的start
+            其实就是启动了NIO的actor模型。
+            NIOServerCnxnFactory里的AcceptThread，
+            是继承自Thread的类，所以会不断调用其run()函数，
+            run()函数里调用select，select调用handleIO，
+            handleIO里的实际操作是交给了线程池，接着看
+            IOWorkRequest，IOWorkRequest的doWork就是线程
+            池里线程的实际处理，doWork里会调用cnxn.doIO()，
+            接着看NIOServerCnxn的doIO函数，会调用
+            readPayload()，readPayload里调用
+            readRequest()，readRequest里调用
+            zkServer.processPacket(...)，processPacket
+            会调用submitRequest，submitRequest会调用
+            submitRequest，submitRequest会调用
+            firstProcessor.processRequest(...)，
+            后面就进入级联的多个Processor处理过程了 */
+            Request request = submittedRequests.take();
+            long traceMask = ZooTrace.CLIENT_REQUEST_TRACE_MASK;
+            if (request.type == OpCode.ping) {
+                traceMask = ZooTrace.CLIENT_PING_TRACE_MASK;
+            }
+            if (LOG.isTraceEnabled()) {
+                ZooTrace.logRequest(LOG, traceMask, 'P', request, "");
+            }
+            if (Request.requestOfDeath == request) {
+                break;
+            }
+            pRequest(request); // 处理请求的过程
+        }
+    } catch (RequestProcessorException e) {
+        if (e.getCause() instanceof XidRolloverException) {
+            LOG.info(e.getCause().getMessage());
+        }
+        handleException(this.getName(), e);
+    } catch (Exception e) {
+        handleException(this.getName(), e);
+    }
+    LOG.info("PrepRequestProcessor exited loop!");
+}
+```
+
+8 ./src/java/main/org/apache/zookeeper/server/PrepRequestProcessor.java
+
+```java
+protected void pRequest(Request request) throws RequestProcessorException {
+...
+            case OpCode.setData:  // 我们只看修改数据的请求怎么实现
+                  SetDataRequest setDataRequest = new SetDataRequest();
+                  /* pRequest2Txn会将请求变成一条或多条
+                  ChangeRecord，然后加入ChangeRecord列表中
+                  （下一个Processor会从这个列表里取数据） */
+                  pRequest2Txn(request.type, zks.getNextZxid(), request, setDataRequest, true);
+                  break;
+...
+          request.zxid = zks.getZxid();
+          nextProcessor.processRequest(request); // 进行下一个Processor
+}
+```
+
+9 ./src/java/main/org/apache/zookeeper/server/quorum/ProposalRequestProcessor.java
+
+从6中可以看到，下一个Processor是ProposalRequestProcessor
+
+```java
+public void processRequest(Request request) throws RequestProcessorException {
+    // LOG.warn("Ack>>> cxid = " + request.cxid + " type = " +
+    // request.type + " id = " + request.sessionId);
+    // request.addRQRec(">prop");
+  
+  
+    /* In the following IF-THEN-ELSE block, we process syncs on the leader.
+     * If the sync is coming from a follower, then the follower
+     * handler adds it to syncHandler. Otherwise, if it is a client of
+     * the leader that issued the sync command, then syncHandler won't
+     * contain the handler. In this case, we add it to syncHandler, and
+     * call processRequest on the next processor.
+     */
+  
+    if (request instanceof LearnerSyncRequest){
+        zks.getLeader().processSync((LearnerSyncRequest)request);
+    } else {
+        /* 如果是主，对于接到的修改请求，需要先
+        nextProcessor（CommitProcessor）来确定是否还有未
+        Commit的提议，如果有，就先将当前请求加入
+        queuedRequests，如果没有，唤醒CommitProcessor，
+        propose queuedRequests中的请求（按顺序应该是最旧的
+        那个）。propose请求，主要就是对follower发包。
+        前面判断是否还有未在本地Commit的提议时，检测方法是
+        检查request的引用计数 */
+        nextProcessor.processRequest(request);
+        if (request.getHdr() != null) {
+            // We need to sync and get consensus on any transactions
+            try {
+                /* 可以发出提议了 */
+                zks.getLeader().propose(request);
+            } catch (XidRolloverException e) {
+                throw new RequestProcessorException(e.getMessage(), e);
+            }
+            /* 发完提议以后交给SyncRequestProcessor处理 */
+            syncProcessor.processRequest(request);
+        }
+    }
+}
+```
+
+10 ./src/java/main/org/apache/zookeeper/server/quorum/Leader.java
+
+```java
+/**
+ * create a proposal and send it out to all the members
+ *
+ * @param request
+ * @return the proposal that is queued to send to all the members
+ */
+public Proposal propose(Request request) throws XidRolloverException {
+    /**
+     * Address the rollover issue. All lower 32bits set indicate a new leader
+     * election. Force a re-election instead. See ZOOKEEPER-1277
+     */
+    if ((request.zxid & 0xffffffffL) == 0xffffffffL) {
+        String msg =
+                "zxid lower 32 bits have rolled over, forcing re-election, and therefore new epoch start";
+        shutdown(msg);
+        throw new XidRolloverException(msg);
+    }
+  
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    BinaryOutputArchive boa = BinaryOutputArchive.getArchive(baos);
+    try {
+        request.getHdr().serialize(boa, "hdr");
+        if (request.getTxn() != null) {
+            request.getTxn().serialize(boa, "txn");
+        }
+        baos.close();
+    } catch (IOException e) {
+        LOG.warn("This really should be impossible", e);
+    }
+    QuorumPacket pp = new QuorumPacket(Leader.PROPOSAL, request.zxid,
+            baos.toByteArray(), null);
+  
+    Proposal p = new Proposal();
+              p.packet = pp;
+    p.request = request;
+  
+    synchronized(this) {
+       p.addQuorumVerifier(self.getQuorumVerifier());
+  
+       if (request.getHdr().getType() == OpCode.reconfig){
+           self.setLastSeenQuorumVerifier(request.qv, true);
+       }
+  
+       if (self.getQuorumVerifier().getVersion()<self.getLastSeenQuorumVerifier().getVersion()) {
+           p.addQuorumVerifier(self.getLastSeenQuorumVerifier());
+       }
+  
+        if (LOG.isDebugEnabled()) {
+            LOG.debug("Proposing:: " + request);
+        }
+  
+        lastProposed = p.packet.getZxid();
+        /* 这里对request的引用会在另一处处理ack的地方尝试去掉引用 */
+        outstandingProposals.put(lastProposed, p);
+        /* 数据包没有对request的引用 */
+        sendPacket(pp);
+    }
+    return p;
+}
+```
+
+11 ./src/java/main/org/apache/zookeeper/server/quorum/ProposalRequestProcessor.java
+
+回到9，交给SyncRequestProcessor以后，其实是放入了SyncRequestProcessor的queuedRequests中，SyncRequestProcessor也是一个线程，其run()里会对queuedRequests进行处理。
+	
+run里会从queuedRequests取出请求，将transaction log刷磁盘，并调用`nextProcessor.processRequest(i);`，而这里的nextProcessor是AckRequestProcessor。
+
+12 ./src/java/main/org/apache/zookeeper/server/quorum/AckRequestProcessor.java
+
+```java
+/**
+ * Forward the request as an ACK to the leader
+ */
+public void processRequest(Request request) {
+    QuorumPeer self = leader.self;
+    if(self != null)
+        leader.processAck(self.getId(), request.zxid, null);
+    else
+        LOG.error("Null QuorumPeer");
+}
+```
+
+13 ./src/java/main/org/apache/zookeeper/server/quorum/Leader.java
+
+processAck会调用tryToCommit，这里就会检查得到的ack是否已经满足quorum要求，然后从outstandingProposals移除对应的proposal，让上游得以继续发送新的提议。
 
 [zab]: http://diyhpl.us/~bryan/papers2/distributed/distributed-systems/zab.totally-ordered-broadcast-protocol.2008.pdf
 [zab-theory-practice]: http://www.tcs.hut.fi/Studies/T-79.5001/reports/2012-deSouzaMedeiros.pdf
