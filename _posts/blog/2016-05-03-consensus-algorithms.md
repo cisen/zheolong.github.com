@@ -21,12 +21,12 @@ date: 2016-05-03T10:24:19+08:00
 
 ### 参考资料
 
-|协议|英文原版|中文注解版|
-|---|---|---|
-|paxos|[The Part-Time Parliament][lamport-paxos] | [paxos]({{ site.url }}/images/blog/consensus_algorithms/lamport-paxos.pdf) |
-|zab | [A simple totally ordered broadcast protocol][zab] | |
-|raft| [In Search of an Understandable Consensus Algorithm (Extended Version)][raft] | [raft]({{ site.url }}/images/blog/consensus_algorithms/lamport-paxos.pdf) |
-|VR  |[Viewstamped Replication Revisited][VR] | |
+|协议|英文原版|中文注解版|参考源码|
+|---|---|---|---|
+|paxos|[The Part-Time Parliament][lamport-paxos] | [paxos]({{ site.url }}/images/blog/consensus_algorithms/lamport-paxos.pdf) |[libpaxos](https://bitbucket.org/sciascid/libpaxos.git)|
+|zab | [A simple totally ordered broadcast protocol][zab] | | |
+|raft| [In Search of an Understandable Consensus Algorithm (Extended Version)][raft] | [raft]({{ site.url }}/images/blog/consensus_algorithms/lamport-paxos.pdf) | |
+|VR  |[Viewstamped Replication Revisited][VR] | | |
 
 说实在的，lamport的原版论文不难理解。虽然大多数说法是lamport用了paxos的隐喻导致原版论文难以理解，但是每个人看问题的角度不一样，而且，原版论文其实比多数翻译要读起来顺畅多了，总体花费的时间更少才是。
 
