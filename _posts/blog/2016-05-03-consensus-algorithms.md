@@ -42,7 +42,7 @@ date: 2016-05-03T10:24:19+08:00
 
     需要注意的是，zab这种简化的算法，即使是leader，同时也只能有一个提议已经发出，而没有得到确定，也就是in-flight（网络中）的提议只有一个（对于paxos的单点也可以同时发出多个提议）。
 
-3. 看懂zab以后，raft简直就是不能再简答了，只是把zab很多实现（没有写到zab论文的）用论文的方式表现出来了（画了很多图，结构等），帮助你理解。
+3. 看懂zab以后，raft简直就是不能再简单了，只是把zab很多实现（没有写到zab论文的）用论文的方式表现出来了（画了很多图，结构等），帮助你理解。
 
     之所以前面要看zab的源码实现，就是因为raft跟zab很像。raft论文里基本是跟paxos在对比，与zab比较起来，也有一些细微的不同，但个人觉得，zab更优秀，看完这些论文就能体会出来，raft为了使得算法容易理解，牺牲了一些zab里的优化。
 
@@ -57,3 +57,18 @@ date: 2016-05-03T10:24:19+08:00
 [raft]: https://ramcloud.atlassian.net/wiki/download/attachments/6586375/raft.pdf
 
 [VR]: http://pmg.csail.mit.edu/papers/vr-revisited.pdf
+
+
+### 其他算法
+
+还有很多其他同步的算法，但有区别于上面的consensus算法，比如ad-hoc consensus策略，或者分布式事务里要求同步到所有节点。
+
+### [Raft真的优于其他算法吗](https://www.quora.com/If-Raft-is-as-good-as-the-papers-claim-why-do-Zookeeper-and-others-implement-other-consensus-algorithms-Why-not-use-Raft)
+
+Zookeeper development started in 2007, while the first drafts of the Raft algorithm were published in 2013. That said, Zookeeper’s Zab algorithm is actually fairly similar to Raft at a high level. It is not quite as simple as Raft, but it already works well and is supported by its own proof of correctness. Any simplicity advantage of replacing Zab with Raft in Zookeeper would be vastly outweighed by the years of work needed to implement, optimize, test, and mature a new algorithm.
+
+However, the story for MongoDB is quite different. MongoDB implements a set of ad-hoc consensus strategies that don’t come with formal proofs and, in practice, fail to provide the guarantees that they claim. Replacing this with something like Raft would be an important improvement, and some developers are working on this, but it’s unclear if this work will be merged upstream.
+
+This sounds really embarrassing for the MongoDB developers—and it should—but MongoDB is not at all an isolated case. If you actually apply rigorous tests to almost any software other than Zookeeper that claims to provide distributed consensus, you find that it doesn’t work. (Even for software that claims to be based on a Raft implementation.)
+
+The moral is that distributed consensus, like secure cryptography, is a really complicated problem that programmers can’t just code their way out of without turning to the academic literature. Formal proofs are tangibly important in practice. Hopefully the simplicity and understandability of Raft will promote improvement in this area; it provides an excellent theoretical foundation. But for now it seems the only way to build a reliable distributed system is to just use Zookeeper.
